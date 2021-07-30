@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd">
+  <talendfile:ContextType xmi:id="_lBa_gPEYEeu-bOMUsEg20Q" confirmationNeeded="false" name="prod">
+    <contextParameter xmi:id="_lBa_gfEYEeu-bOMUsEg20Q" comment="" name="PostgresqlIBmCloud_Server" prompt="PostgresqlIBmCloud_Server?" promptNeeded="false" type="id_String" value="f11bb784-0362-4374-a147-7fb85ce56ecf.b2b5a92ee2df47d58bad0fa448c15585.private.databases.appdomain.cloud port=31360"/>
+    <contextParameter xmi:id="_lBa_gvEYEeu-bOMUsEg20Q" comment="" name="PostgresqlIBmCloud_Database" prompt="PostgresqlIBmCloud_Database?" promptNeeded="false" type="id_String" value="TysAnalyticsDb"/>
+    <contextParameter xmi:id="_lBa_g_EYEeu-bOMUsEg20Q" comment="" name="PostgresqlIBmCloud_Login" prompt="PostgresqlIBmCloud_Login?" promptNeeded="false" type="id_String" value="trust_your_supplier"/>
+    <contextParameter xmi:id="_lBa_hPEYEeu-bOMUsEg20Q" comment="" name="PostgresqlIBmCloud_Password" prompt="PostgresqlIBmCloud_Password?" promptNeeded="false" type="id_Password" value="enc:system.encryption.key.v1:Ituz1lrduTnZi1fm6KKoahPx65NAH2UfRCRZHb02+XZ96nXg6IiKOuAfz8cgyKLrxSp1WddTX/Zkavs="/>
+    <contextParameter xmi:id="_lBa_hfEYEeu-bOMUsEg20Q" comment="" name="PostgresqlIBmCloud_Port" prompt="PostgresqlIBmCloud_Port?" promptNeeded="false" type="id_String" value="31360"/>
+    <contextParameter xmi:id="_lBa_hvEYEeu-bOMUsEg20Q" comment="" name="PostgresqlIBmCloud_AdditionalParams" prompt="PostgresqlIBmCloud_AdditionalParams?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_lBa_h_EYEeu-bOMUsEg20Q" comment="" name="PostgresqlIBmCloud_Schema" prompt="PostgresqlIBmCloud_Schema?" promptNeeded="false" type="id_String" value="public"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_QlhN8O6lEeu-bOMUsEg20Q" confirmationNeeded="false" name="Staging">
+    <contextParameter xmi:id="_QlhN8e6lEeu-bOMUsEg20Q" comment="" name="PostgresqlIBmCloud_Server" prompt="PostgresqlIBmCloud_Server?" promptNeeded="false" type="id_String" value="23773bbe-9e15-4353-922b-7ec48a6b663e.bn2a2vgd01r3l0hfmvc0.databases.appdomain.cloud"/>
+    <contextParameter xmi:id="_QlhN8u6lEeu-bOMUsEg20Q" comment="" name="PostgresqlIBmCloud_Database" prompt="PostgresqlIBmCloud_Database?" promptNeeded="false" type="id_String" value="TysAnalyticsDb"/>
+    <contextParameter xmi:id="_QlhN8-6lEeu-bOMUsEg20Q" comment="" name="PostgresqlIBmCloud_Login" prompt="PostgresqlIBmCloud_Login?" promptNeeded="false" type="id_String" value="staging_trust_your_supplier"/>
+    <contextParameter xmi:id="_QlhN9O6lEeu-bOMUsEg20Q" comment="" name="PostgresqlIBmCloud_Password" prompt="PostgresqlIBmCloud_Password?" promptNeeded="false" type="id_Password" value="enc:system.encryption.key.v1:I4UqoVDTLEqp8njHmAN1/QidzUkMHJQL5vwPJro9x9skK+EPv5I2d3hSYDi9eQ6TSDVm0F08rZDhcw=="/>
+    <contextParameter xmi:id="_QlhN9e6lEeu-bOMUsEg20Q" comment="" name="PostgresqlIBmCloud_Port" prompt="PostgresqlIBmCloud_Port?" promptNeeded="false" type="id_String" value="30354"/>
+    <contextParameter xmi:id="_QlhN9u6lEeu-bOMUsEg20Q" comment="" name="PostgresqlIBmCloud_AdditionalParams" prompt="PostgresqlIBmCloud_AdditionalParams?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_QlhN9-6lEeu-bOMUsEg20Q" comment="" name="PostgresqlIBmCloud_Schema" prompt="PostgresqlIBmCloud_Schema?" promptNeeded="false" type="id_String" value="public"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_QlhN-O6lEeu-bOMUsEg20Q" confirmationNeeded="false" name="UAT">
+    <contextParameter xmi:id="_QlhN-e6lEeu-bOMUsEg20Q" comment="" name="PostgresqlIBmCloud_Server" prompt="PostgresqlIBmCloud_Server?" promptNeeded="false" type="id_String" value="65ad5781-8560-4690-97c0-d43a5b42c4a9.8117147f814b4b2ea643610826cd2046.databases.appdomain.cloud"/>
+    <contextParameter xmi:id="_QlhN-u6lEeu-bOMUsEg20Q" comment="" name="PostgresqlIBmCloud_Database" prompt="PostgresqlIBmCloud_Database?" promptNeeded="false" type="id_String" value="TysAnalyticsDb"/>
+    <contextParameter xmi:id="_QlhN--6lEeu-bOMUsEg20Q" comment="" name="PostgresqlIBmCloud_Login" prompt="PostgresqlIBmCloud_Login?" promptNeeded="false" type="id_String" value="ibm_cloud_c3eae711_1f76_4405_864e_867363d5f367"/>
+    <contextParameter xmi:id="_QlhN_O6lEeu-bOMUsEg20Q" comment="" name="PostgresqlIBmCloud_Password" prompt="PostgresqlIBmCloud_Password?" promptNeeded="false" type="id_Password" value="enc:system.encryption.key.v1:ucFYZ2hvQ4lFP/gDcQS/XBfX7kX207QCzOTfhVa4tDW2a6wzlx2crNGO5uI0MB8+ZCT/4FGEvbjvNWmnAEUrma7BMdGdqRrGKcLYDnszt6/CN8IihfnDwfYkuYo="/>
+    <contextParameter xmi:id="_QlhN_e6lEeu-bOMUsEg20Q" comment="" name="PostgresqlIBmCloud_Port" prompt="PostgresqlIBmCloud_Port?" promptNeeded="false" type="id_String" value="32301"/>
+    <contextParameter xmi:id="_QlhN_u6lEeu-bOMUsEg20Q" comment="" name="PostgresqlIBmCloud_AdditionalParams" prompt="PostgresqlIBmCloud_AdditionalParams?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_QlhN_-6lEeu-bOMUsEg20Q" comment="" name="PostgresqlIBmCloud_Schema" prompt="PostgresqlIBmCloud_Schema?" promptNeeded="false" type="id_String" value="public"/>
+  </talendfile:ContextType>
+</xmi:XMI>
