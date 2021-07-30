@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.relational="http:///orgomg/cwm/resource/relational.ecore">
+  <TalendMetadata:DatabaseConnection xmi:id="_UeBooLiDEeuuA97tgzSb6Q" name="PostgresqlIBmCloud" id="_Q7RUkLh4EeuuA97tgzSb6Q" label="PostgresqlIBmCloud" dataPackage="_57weMNKJEeuuA97tgzSb6Q" DatabaseType="PostgreSQL" DriverClass="org.postgresql.Driver" URL="jdbc:postgresql://65ad5781-8560-4690-97c0-d43a5b42c4a9.8117147f814b4b2ea643610826cd2046.databases.appdomain.cloud:32301/TysAnalyticsDb?" dbVersionString="V9_X" Port="32301" Username="ibm_cloud_c3eae711_1f76_4405_864e_867363d5f367" Password="enc:system.encryption.key.v1:QqOak+hkWXCC3D8cjDeLC/9qH/JsF+EP6/UXHbm+OvNml7QhwPegu866tWwMzw6NHPfWgOhoFBiIRboqhWbVKAdJoUZQTXo5CfvA9bOHdx/gGf/M999cUR/WrJY=" ServerName="65ad5781-8560-4690-97c0-d43a5b42c4a9.8117147f814b4b2ea643610826cd2046.databases.appdomain.cloud" DatasourceName="" FileFieldName="" SID="TysAnalyticsDb" SqlSynthax="" StringQuote="" NullChar="" DbmsId="postgres_id" ProductId="POSTGRESQL" AdditionalParams="" StandardSQL="true" SQLMode="false" UiSchema="public">
+    <taggedValue xmi:id="_UeFTALiDEeuuA97tgzSb6Q" tag="Is Conn Need Reload" value="false"/>
+    <taggedValue xmi:id="_Ue5LULiDEeuuA97tgzSb6Q" tag="package filter" value=""/>
+    <taggedValue xmi:id="_UfJC8LiDEeuuA97tgzSb6Q" tag="Status" value=""/>
+    <taggedValue xmi:id="_UfJC8biDEeuuA97tgzSb6Q" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_UfJC8riDEeuuA97tgzSb6Q" tag="Purpose" value=""/>
+    <taggedValue xmi:id="_UfJC87iDEeuuA97tgzSb6Q" tag="Description" value=""/>
+    <taggedValue xmi:id="_UfJC9LiDEeuuA97tgzSb6Q" tag="Author" value=""/>
+    <taggedValue xmi:id="_UfJC9biDEeuuA97tgzSb6Q" tag="otherParameter"/>
+    <taggedValue xmi:id="_Uf2NkLiDEeuuA97tgzSb6Q" tag="DB ProductName" value="PostgreSQL"/>
+    <taggedValue xmi:id="_Uf2NkbiDEeuuA97tgzSb6Q" tag="DB ProductVersion" value="12.5"/>
+    <taggedValue xmi:id="_Uf2NkriDEeuuA97tgzSb6Q" tag="DB IdentifierQuoteString" value="&quot;"/>
+    <parameters xmi:id="_UeFTAbiDEeuuA97tgzSb6Q" key="CONN_PARA_KEY_USERNAME" value="ibm_cloud_c3eae711_1f76_4405_864e_867363d5f367"/>
+    <parameters xmi:id="_32ASoNKJEeuuA97tgzSb6Q" key="CONN_PARA_KEY_MAPRDB_TABLE_NS_MAPPING" value=""/>
+  </TalendMetadata:DatabaseConnection>
+  <orgomg.cwm.resource.relational:Catalog xmi:id="_57weMNKJEeuuA97tgzSb6Q" name="TysAnalyticsDb" dataManager="_UeBooLiDEeuuA97tgzSb6Q">
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_57weMdKJEeuuA97tgzSb6Q" name="public"/>
+  </orgomg.cwm.resource.relational:Catalog>
+</xmi:XMI>

@@ -1,0 +1,706 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMapper="http://www.talend.org/mapper" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" defaultContext="Staging" jobType="Standard">
+  <context confirmationNeeded="false" name="Staging">
+    <contextParameter comment="" name="PostgresqlIBmCloud_Server" prompt="PostgresqlIBmCloud_Server?" promptNeeded="false" repositoryContextId="_HBVeMOvBEeu-bOMUsEg20Q" type="id_String" value="23773bbe-9e15-4353-922b-7ec48a6b663e.bn2a2vgd01r3l0hfmvc0.databases.appdomain.cloud"/>
+    <contextParameter comment="" name="PostgresqlIBmCloud_Database" prompt="PostgresqlIBmCloud_Database?" promptNeeded="false" repositoryContextId="_HBVeMOvBEeu-bOMUsEg20Q" type="id_String" value="TysAnalyticsDb"/>
+    <contextParameter comment="" name="PostgresqlIBmCloud_Login" prompt="PostgresqlIBmCloud_Login?" promptNeeded="false" repositoryContextId="_HBVeMOvBEeu-bOMUsEg20Q" type="id_String" value="staging_trust_your_supplier"/>
+    <contextParameter comment="" name="PostgresqlIBmCloud_Password" prompt="PostgresqlIBmCloud_Password?" promptNeeded="false" repositoryContextId="_HBVeMOvBEeu-bOMUsEg20Q" type="id_Password" value="enc:system.encryption.key.v1:o8WBJCo0lz1cHv7LTxviprHZftAJLZV3gkeltTqRu3G8+LqDZ6tqO4LQ/zZKJfni8NnWFXGQiVCCng=="/>
+    <contextParameter comment="" name="PostgresqlIBmCloud_Port" prompt="PostgresqlIBmCloud_Port?" promptNeeded="false" repositoryContextId="_HBVeMOvBEeu-bOMUsEg20Q" type="id_String" value="30354"/>
+    <contextParameter comment="" name="PostgresqlIBmCloud_AdditionalParams" prompt="PostgresqlIBmCloud_AdditionalParams?" promptNeeded="false" repositoryContextId="_HBVeMOvBEeu-bOMUsEg20Q" type="id_String" value=""/>
+    <contextParameter comment="" name="PostgresqlIBmCloud_Schema" prompt="PostgresqlIBmCloud_Schema?" promptNeeded="false" repositoryContextId="_HBVeMOvBEeu-bOMUsEg20Q" type="id_String" value="public"/>
+    <contextParameter comment="" name="password" prompt="password?" promptNeeded="false" repositoryContextId="_EJROAO64Eeu-bOMUsEg20Q" type="id_Password" value="enc:system.encryption.key.v1:/rUg5XgCHMv3r+Zto8IyynHr+6TSDzY1SccWbKfu3/zMqskGo4SKMK3e5TwfgE7dwtONYTkHBkb46j+CGGdwOd3Jghg="/>
+    <contextParameter comment="" name="host1" prompt="host1?" promptNeeded="false" repositoryContextId="_EJROAO64Eeu-bOMUsEg20Q" type="id_String" value="89452876-dce8-4a10-9118-0e289aae9e57-0.btdkfu0w0p0vutjk0r9g.databases.appdomain.cloud"/>
+    <contextParameter comment="" name="host2" prompt="host2?" promptNeeded="false" repositoryContextId="_EJROAO64Eeu-bOMUsEg20Q" type="id_String" value="89452876-dce8-4a10-9118-0e289aae9e57-1.btdkfu0w0p0vutjk0r9g.databases.appdomain.cloud"/>
+    <contextParameter comment="" name="host3" prompt="host3?" promptNeeded="false" repositoryContextId="_EJROAO64Eeu-bOMUsEg20Q" type="id_String" value="89452876-dce8-4a10-9118-0e289aae9e57-1.btdkfu0w0p0vutjk0r9g.databases.appdomain.cloud"/>
+    <contextParameter comment="" name="port" prompt="port?" promptNeeded="false" repositoryContextId="_EJROAO64Eeu-bOMUsEg20Q" type="id_Integer" value="32748"/>
+    <contextParameter comment="" name="user" prompt="user?" promptNeeded="false" repositoryContextId="_EJROAO64Eeu-bOMUsEg20Q" type="id_String" value="power_bi_trustyoursupplier"/>
+    <contextParameter comment="" name="KeyStore" prompt="KeyStore?" promptNeeded="false" repositoryContextId="_XAjxMO7FEeu-bOMUsEg20Q" type="id_String" value="C:\Program Files\Java\jdk-11.0.12\bin\webservice.jks"/>
+  </context>
+  <context confirmationNeeded="false" name="UAT">
+    <contextParameter comment="" name="PostgresqlIBmCloud_Server" prompt="PostgresqlIBmCloud_Server?" promptNeeded="false" repositoryContextId="_HBVeMOvBEeu-bOMUsEg20Q" type="id_String" value="65ad5781-8560-4690-97c0-d43a5b42c4a9.8117147f814b4b2ea643610826cd2046.databases.appdomain.cloud"/>
+    <contextParameter comment="" name="PostgresqlIBmCloud_Database" prompt="PostgresqlIBmCloud_Database?" promptNeeded="false" repositoryContextId="_HBVeMOvBEeu-bOMUsEg20Q" type="id_String" value="TysAnalyticsDb"/>
+    <contextParameter comment="" name="PostgresqlIBmCloud_Login" prompt="PostgresqlIBmCloud_Login?" promptNeeded="false" repositoryContextId="_HBVeMOvBEeu-bOMUsEg20Q" type="id_String" value="ibm_cloud_c3eae711_1f76_4405_864e_867363d5f367"/>
+    <contextParameter comment="" name="PostgresqlIBmCloud_Password" prompt="PostgresqlIBmCloud_Password?" promptNeeded="false" repositoryContextId="_HBVeMOvBEeu-bOMUsEg20Q" type="id_Password" value="enc:system.encryption.key.v1:H8fLXNN4LzXed5+VDerb+n7O9UplNIe/OkOvwSuCcovYeGNBPn7D4eI/RvcBLYBY/FwUvK0lr5eSiw+Wf+RI5v3B0spfYD7218SyTxvUSoIEDqRWxjsD1lE/5wc="/>
+    <contextParameter comment="" name="PostgresqlIBmCloud_Port" prompt="PostgresqlIBmCloud_Port?" promptNeeded="false" repositoryContextId="_HBVeMOvBEeu-bOMUsEg20Q" type="id_String" value="32301"/>
+    <contextParameter comment="" name="PostgresqlIBmCloud_AdditionalParams" prompt="PostgresqlIBmCloud_AdditionalParams?" promptNeeded="false" repositoryContextId="_HBVeMOvBEeu-bOMUsEg20Q" type="id_String" value=""/>
+    <contextParameter comment="" name="PostgresqlIBmCloud_Schema" prompt="PostgresqlIBmCloud_Schema?" promptNeeded="false" repositoryContextId="_HBVeMOvBEeu-bOMUsEg20Q" type="id_String" value="public"/>
+    <contextParameter comment="" name="password" prompt="password?" promptNeeded="false" repositoryContextId="_EJROAO64Eeu-bOMUsEg20Q" type="id_Password" value="enc:system.encryption.key.v1:iyhmcUhB3LLf/HkSBpoANWqxBxhkEA7qvDHil7OnRdRrBbOwOmjf0WY/xpZSnUZQZCEPvEep29WRfCtWLkemrgxrOsQ="/>
+    <contextParameter comment="" name="host1" prompt="host1?" promptNeeded="false" repositoryContextId="_EJROAO64Eeu-bOMUsEg20Q" type="id_String" value="8a33da23-8e25-4dd5-ae9b-30cb5ea579d8-0.c09unglw01gdsi4ks020.databases.appdomain.cloud"/>
+    <contextParameter comment="" name="host2" prompt="host2?" promptNeeded="false" repositoryContextId="_EJROAO64Eeu-bOMUsEg20Q" type="id_String" value="8a33da23-8e25-4dd5-ae9b-30cb5ea579d8-1.c09unglw01gdsi4ks020.databases.appdomain.cloud"/>
+    <contextParameter comment="" name="host3" prompt="host3?" promptNeeded="false" repositoryContextId="_EJROAO64Eeu-bOMUsEg20Q" type="id_String" value="8a33da23-8e25-4dd5-ae9b-30cb5ea579d8-2.c09unglw01gdsi4ks020.databases.appdomain.cloud"/>
+    <contextParameter comment="" name="port" prompt="port?" promptNeeded="false" repositoryContextId="_EJROAO64Eeu-bOMUsEg20Q" type="id_Integer" value="32167"/>
+    <contextParameter comment="" name="user" prompt="user?" promptNeeded="false" repositoryContextId="_EJROAO64Eeu-bOMUsEg20Q" type="id_String" value="power_bi_trustyoursupplier"/>
+    <contextParameter comment="" name="KeyStore" prompt="KeyStore?" promptNeeded="false" repositoryContextId="_XAjxMO7FEeu-bOMUsEg20Q" type="id_String" value="C:\Program Files\Java\jdk-11.0.10\bin\webservice.jks"/>
+  </context>
+  <context confirmationNeeded="false" name="production">
+    <contextParameter comment="" name="PostgresqlIBmCloud_Server" prompt="PostgresqlIBmCloud_Server?" promptNeeded="false" repositoryContextId="_HBVeMOvBEeu-bOMUsEg20Q" type="id_String" value="f11bb784-0362-4374-a147-7fb85ce56ecf.b2b5a92ee2df47d58bad0fa448c15585.private.databases.appdomain.cloud"/>
+    <contextParameter comment="" name="PostgresqlIBmCloud_Database" prompt="PostgresqlIBmCloud_Database?" promptNeeded="false" repositoryContextId="_HBVeMOvBEeu-bOMUsEg20Q" type="id_String" value="TysAnalyticsDb"/>
+    <contextParameter comment="" name="PostgresqlIBmCloud_Login" prompt="PostgresqlIBmCloud_Login?" promptNeeded="false" repositoryContextId="_HBVeMOvBEeu-bOMUsEg20Q" type="id_String" value="trust_your_supplier"/>
+    <contextParameter comment="" name="PostgresqlIBmCloud_Password" prompt="PostgresqlIBmCloud_Password?" promptNeeded="false" repositoryContextId="_HBVeMOvBEeu-bOMUsEg20Q" type="id_Password" value="enc:system.encryption.key.v1:+TlywAyH0x9iGjciV7TWY90rGjo+kh5W2nkHTjct/5xCQ2+ogdjrlMiXEpqmfGwFcVlpoVx7fVRDNHk="/>
+    <contextParameter comment="" name="PostgresqlIBmCloud_Port" prompt="PostgresqlIBmCloud_Port?" promptNeeded="false" repositoryContextId="_HBVeMOvBEeu-bOMUsEg20Q" type="id_String" value="31360"/>
+    <contextParameter comment="" name="PostgresqlIBmCloud_AdditionalParams" prompt="PostgresqlIBmCloud_AdditionalParams?" promptNeeded="false" repositoryContextId="_HBVeMOvBEeu-bOMUsEg20Q" type="id_String" value=""/>
+    <contextParameter comment="" name="PostgresqlIBmCloud_Schema" prompt="PostgresqlIBmCloud_Schema?" promptNeeded="false" repositoryContextId="_HBVeMOvBEeu-bOMUsEg20Q" type="id_String" value="public"/>
+    <contextParameter comment="" name="KeyStore" prompt="KeyStore?" promptNeeded="false" repositoryContextId="_XAjxMO7FEeu-bOMUsEg20Q" type="id_String" value="C:\Program Files\Java\jdk-11.0.12\bin\webservice.jks"/>
+    <contextParameter comment="" name="host1" prompt="host1?" promptNeeded="false" repositoryContextId="_EJROAO64Eeu-bOMUsEg20Q" type="id_String" value="bb67b6e9-7bde-4971-bcca-9ee4deadee2a-0.c09unglw01gdsi4ks020.databases.appdomain.cloud"/>
+    <contextParameter comment="" name="host2" prompt="host2?" promptNeeded="false" repositoryContextId="_EJROAO64Eeu-bOMUsEg20Q" type="id_String" value="bb67b6e9-7bde-4971-bcca-9ee4deadee2a-1.c09unglw01gdsi4ks020.databases.appdomain.cloud"/>
+    <contextParameter comment="" name="host3" prompt="host3?" promptNeeded="false" repositoryContextId="_EJROAO64Eeu-bOMUsEg20Q" type="id_String" value="bb67b6e9-7bde-4971-bcca-9ee4deadee2a-2.c09unglw01gdsi4ks020.databases.appdomain.cloud"/>
+    <contextParameter comment="" name="user" prompt="user?" promptNeeded="false" repositoryContextId="_EJROAO64Eeu-bOMUsEg20Q" type="id_String" value="power_bi_trustyoursupplier"/>
+    <contextParameter comment="" name="password" prompt="password?" promptNeeded="false" repositoryContextId="_EJROAO64Eeu-bOMUsEg20Q" type="id_Password" value="enc:system.encryption.key.v1:V31M2sW3V4649vlJrGTc6nkSWP81AHz8mpclelApo0L2d3PAoULbz1aUrjEwmS0+WpyOXt8PFB0KamUQ0A1vLJgf7rk="/>
+    <contextParameter comment="" name="port" prompt="port?" promptNeeded="false" repositoryContextId="_EJROAO64Eeu-bOMUsEg20Q" type="id_Integer" value="32043"/>
+  </context>
+  <parameters>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" value="96" show="false"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" value="0" show="false"/>
+    <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_VERSION" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_KERBEROS" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_PRINCIPAL" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_USERNAME" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_GROUP" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_USE_KEYTAB" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_KT_PRINCIPAL" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_KEY_TAB" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_OO_KERBEROS" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_END_POINT" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_JOB_TRACKER_ENDPOINT" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_END_POINT" value="" show="false"/>
+    <elementParameter field="CHECK" name="IMPLICITCONTEXT_USE_PROJECT_SETTINGS" value="false" show="false"/>
+    <elementParameter field="CHECK" name="STATANDLOG_USE_PROJECT_SETTINGS" value="false" show="false"/>
+    <elementParameter field="CHECK" name="MULTI_THREAD_EXECATION" value="false"/>
+    <elementParameter field="CHECK" name="IMPLICIT_TCONTEXTLOAD" value="false"/>
+    <elementParameter field="RADIO" name="FROM_FILE_FLAG_IMPLICIT_CONTEXT" value="false" show="false"/>
+    <elementParameter field="RADIO" name="FROM_DATABASE_FLAG_IMPLICIT_CONTEXT" value="false" show="false"/>
+    <elementParameter field="FILE" name="IMPLICIT_TCONTEXTLOAD_FILE" value="&quot;C:/Users/rambabu.madugundu/Downloads/TOS_BD-20200219_1130-V7.3.1/TOS_BD-20200219_1130-V7.3.1/workspace/in.csv&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="OVERRIDE_ENCODING_FLAG" value="false" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="OVERRIDE_ENCODING_IN_EXTRA" value="ISO-8859-15" show="false"/>
+    <elementParameter field="TECHNICAL" name="OVERRIDE_ENCODING_IN_EXTRA:ENCODING_TYPE" value="ISO-8859-15" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE_IMPLICIT_CONTEXT" value="" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION_IMPLICIT_CONTEXT" value="ORACLE_12" show="false"/>
+    <elementParameter field="TEXT" name="URL_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR_IMPLICIT_CONTEXT" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="HOST_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PORT_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" value="enc:system.encryption.key.v1:JvOsw5FvEj3qDmsnKOqLdoRWiLpTswtBe+Em98bm" show="false"/>
+    <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="LOAD_NEW_VARIABLE" value="Warning" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="NOT_LOAD_OLD_VARIABLE" value="Warning" show="false"/>
+    <elementParameter field="CHECK" name="PRINT_OPERATIONS" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_ERROR" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_WARNINGS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_INFO" value="true" show="false"/>
+    <elementParameter field="CHECK" name="ON_STATCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_LOGCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_METERCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_CONSOLE_FLAG" value="false" show="false"/>
+    <elementParameter field="CHECK" name="ON_FILES_FLAG" value="false" show="false"/>
+    <elementParameter field="DIRECTORY" name="FILE_PATH" value="&quot;C:/Users/rambabu.madugundu/Downloads/TOS_BD-20200219_1130-V7.3.1/TOS_BD-20200219_1130-V7.3.1/workspace/.metadata&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_STATS" value="&quot;stats_file.txt&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_LOGS" value="&quot;logs_file.txt&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_METTER" value="&quot;meter_file.txt&quot;" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="ISO-8859-15" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15" show="false"/>
+    <elementParameter field="CHECK" name="ON_DATABASE_FLAG" value="false" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE" value="tJDBCOutput" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="ORACLE_12" show="false"/>
+    <elementParameter field="TEXT" name="URL" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:glHnTuyRpC1VF0DleDg0x65vynJWgOwoYbq9EJSB" show="false"/>
+    <elementParameter field="FILE" name="DBFILE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_STATS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_LOGS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_METER" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_RUNTIME_ERRORS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_USER_ERRORS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_USER_WARNING" value="true" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_REALTIME_STATS" value="false" show="false"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_HEADERID" value="" show="false"/>
+    <elementParameter field="CHECK" name="HEADER_ENABLED" value="false" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_LIBRARY" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_CODE" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_IMPORT" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_FOOTERID" value="" show="false"/>
+    <elementParameter field="CHECK" name="FOOTER_ENABLED" value="false" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_LIBRARY" value="" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_CODE" value="" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_IMPORT" value="" show="false"/>
+    <routinesParameter id="_Dt8ooJCtEeuqw9DfDxhQiw" name="DataOperation"/>
+    <routinesParameter id="_DvXk8JCtEeuqw9DfDxhQiw" name="Mathematical"/>
+    <routinesParameter id="_DvcdcJCtEeuqw9DfDxhQiw" name="Numeric"/>
+    <routinesParameter id="_DvhV8JCtEeuqw9DfDxhQiw" name="Relational"/>
+    <routinesParameter id="_DvmOcJCtEeuqw9DfDxhQiw" name="StringHandling"/>
+    <routinesParameter id="_Dvqf4JCtEeuqw9DfDxhQiw" name="TalendDataGenerator"/>
+    <routinesParameter id="_DvvYYJCtEeuqw9DfDxhQiw" name="TalendDate"/>
+    <routinesParameter id="_Dvzp0JCtEeuqw9DfDxhQiw" name="TalendString"/>
+    <routinesParameter id="_Dv37QJCtEeuqw9DfDxhQiw" name="TalendStringUtil"/>
+  </parameters>
+  <node componentName="tMongoDBConnection" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="256" posY="64">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMongoDBConnection_1" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="MONGODB_3_2_X"/>
+    <elementParameter field="CHECK" name="USE_REPLICA_SET" value="true"/>
+    <elementParameter field="TABLE" name="REPLICA_SET">
+      <elementValue elementRef="REPLICA_HOST" value="context.host1"/>
+      <elementValue elementRef="REPLICA_PORT" value="context.port"/>
+      <elementValue elementRef="REPLICA_HOST" value="context.host2"/>
+      <elementValue elementRef="REPLICA_PORT" value="context.port"/>
+      <elementValue elementRef="REPLICA_HOST" value="context.host3"/>
+      <elementValue elementRef="REPLICA_PORT" value="context.port"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="HOST" value="&quot;localhost&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="27017" show="false"/>
+    <elementParameter field="TEXT" name="DATABASE" value="&quot;sdm&quot;"/>
+    <elementParameter field="CHECK" name="USE_SSL" value="true"/>
+    <elementParameter field="CHECK" name="REQUIRED_AUTHENTICATION" value="true"/>
+    <elementParameter field="CLOSED_LIST" name="AUTHENTICATION_MECHANISM" value="NEGOTIATE_MEC"/>
+    <elementParameter field="CHECK" name="SET_AUTHENTICATION_DATABASE" value="true"/>
+    <elementParameter field="TEXT" name="AUTHENTICATION_DATABASE" value="&quot;admin&quot;"/>
+    <elementParameter field="TEXT" name="USERNAME" value="context.user"/>
+    <elementParameter field="PASSWORD" name="PASSWORD" value="enc:system.encryption.key.v1:+x6+NyUt3xJ+3Q+yWvR9gO2/PrjmHUhjrNjcxwpr0x0ytSuEjOoE5Pj1AdM="/>
+    <elementParameter field="TEXT" name="KRB_USER_PRINCIPAL" value="&quot;mongouser@EXAMPLE.COM&quot;" show="false"/>
+    <elementParameter field="TEXT" name="KRB_REALM" value="&quot;EXAMPLE.COM&quot;" show="false"/>
+    <elementParameter field="TEXT" name="KRB_KDC" value="&quot;kdc.example.com&quot;" show="false"/>
+    <elementParameter field="CHECK" name="QUERYOPTION_NOTIMEOUT" value="true"/>
+    <elementParameter field="CHECK" name="APPLY_OPTIONAL_ATTRIBUTES" value="false"/>
+    <elementParameter field="TABLE" name="OPTIONAL_ATTRIBUTES" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node componentName="tSetKeystore" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="256" posY="256">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSetKeystore_1" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="TRUSTSTORE_TYPE" value="JKS"/>
+    <elementParameter field="FILE" name="SSL_TRUSTSERVER_TRUSTSTORE" value="context.KeyStore"/>
+    <elementParameter field="PASSWORD" name="SSL_TRUSTSERVER_PASSWORD" value="enc:system.encryption.key.v1:sw+AGzlzu7/zrUq8RZhSE6iau5ydVq4iGw+hocNcNEunKu0k"/>
+    <elementParameter field="CHECK" name="NEED_CLIENT_AUTH" value="true"/>
+    <elementParameter field="CLOSED_LIST" name="KEYSTORE_TYPE" value="JKS"/>
+    <elementParameter field="FILE" name="SSL_KEYSTORE" value="context.KeyStore"/>
+    <elementParameter field="PASSWORD" name="SSL_KEYSTORE_PASSWORD" value="enc:system.encryption.key.v1:umUrrik6VKZJiUtplsPkWZ8pfax9pvi9k/+6lHWjj02KPGop"/>
+    <elementParameter field="CHECK" name="VERIFY_NAME" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node componentName="tMongoDBInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="544" posY="128">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMongoDBInput_3" show="false"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tMongoDBConnection_1"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="MONGODB_3_5_X" show="false"/>
+    <elementParameter field="CHECK" name="USE_REPLICA_SET" value="false" show="false"/>
+    <elementParameter field="TABLE" name="REPLICA_SET" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;localhost&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="27017" show="false"/>
+    <elementParameter field="TEXT" name="DATABASE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="USE_SSL" value="false" show="false"/>
+    <elementParameter field="CHECK" name="SET_READ_PREFERENCE" value="true"/>
+    <elementParameter field="CLOSED_LIST" name="READ_PREFERENCE" value="NEAREST"/>
+    <elementParameter field="CHECK" name="REQUIRED_AUTHENTICATION" value="false" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="AUTHENTICATION_MECHANISM" value="SCRAMSHA1_MEC" show="false"/>
+    <elementParameter field="CHECK" name="SET_AUTHENTICATION_DATABASE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="AUTHENTICATION_DATABASE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="USERNAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASSWORD" value="enc:system.encryption.key.v1:+X3eEe5ciyMK2ZRW5sjElbUuN+GYHXt9LEUHXV9k" show="false"/>
+    <elementParameter field="TEXT" name="KRB_USER_PRINCIPAL" value="&quot;mongouser@EXAMPLE.COM&quot;" show="false"/>
+    <elementParameter field="TEXT" name="KRB_REALM" value="&quot;EXAMPLE.COM&quot;" show="false"/>
+    <elementParameter field="TEXT" name="KRB_KDC" value="&quot;kdc.example.com&quot;" show="false"/>
+    <elementParameter field="TEXT" name="COLLECTION" value="&quot;Questionnaire&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="QUERY_TYPE" value="FIND_QUERY"/>
+    <elementParameter field="LABEL" name="NOTE_ISOLATION" value="Note : Surround String values in your query with single quotes&#xA;Note : If you are running on a Sharded Cluster, please make sure to include the shard key in the query."/>
+    <elementParameter field="MEMO" name="QUERY" value="&quot;{category:'Standard'}&quot;"/>
+    <elementParameter field="TABLE" name="AGGREGATION_STAGES" show="false">
+      <elementValue elementRef="AGGREGATION_STAGE" value="&quot;newLine&quot;"/>
+    </elementParameter>
+    <elementParameter field="TABLE" name="MAPPING">
+      <elementValue elementRef="SCHEMA_COLUMN" value="_id"/>
+      <elementValue elementRef="PARENT_NODE_PATH" value=""/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="questions"/>
+      <elementValue elementRef="PARENT_NODE_PATH" value=""/>
+    </elementParameter>
+    <elementParameter field="TABLE" name="SORT"/>
+    <elementParameter field="TEXT" name="LIMIT" value=""/>
+    <elementParameter field="CHECK" name="QUERYOPTION_NOTIMEOUT" value="false" show="false"/>
+    <elementParameter field="CHECK" name="EXTERNAL_SORT_AGGREGATION" value="false" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tMongoDBInput_3">
+      <column comment="" key="false" length="-1" name="_id" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="questions" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="352" posY="288">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMap_1" show="false"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
+    <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_ghTKcJ3uEeuPtfcAvlQ8_g-tMap_1-PREVIEW.bmp"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true" show="false"/>
+    <elementParameter field="CHECK" name="LKUP_PARALLELIZE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="LEVENSHTEIN" value="0" show="false"/>
+    <elementParameter field="TEXT" name="JACCARD" value="0" show="false"/>
+    <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
+    <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="questionnaires">
+      <column comment="" key="false" length="-1" name="_id" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="questions" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+    <nodeData xsi:type="TalendMapper:MapperData">
+      <uiProperties/>
+      <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
+      <outputTables sizeState="INTERMEDIATE" name="questionnaires">
+        <mapperTableEntries name="_id" expression="row1._id " type="id_String" nullable="true"/>
+        <mapperTableEntries name="questions" expression="row1.questions " type="id_String" nullable="true"/>
+      </outputTables>
+      <inputTables sizeState="INTERMEDIATE" name="row1" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
+        <mapperTableEntries name="_id" type="id_String" nullable="true"/>
+        <mapperTableEntries name="questions" type="id_String" nullable="true"/>
+      </inputTables>
+    </nodeData>
+  </node>
+  <node componentName="tWriteJSONField" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="512" posY="288">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tWriteJSONField_1" show="false"/>
+    <elementParameter field="COLUMN_LIST" name="JSONFIELD" value="questionstree"/>
+    <elementParameter field="TABLE" name="ROOT" show="false">
+      <elementValue elementRef="PATH" value="/questionst"/>
+      <elementValue elementRef="COLUMN" value=""/>
+      <elementValue elementRef="VALUE" value=""/>
+      <elementValue elementRef="ATTRIBUTE" value="main"/>
+      <elementValue elementRef="ORDER" value="1"/>
+      <elementValue elementRef="PATH" value="/questionst/_id"/>
+      <elementValue elementRef="COLUMN" value="_id"/>
+      <elementValue elementRef="VALUE" value=""/>
+      <elementValue elementRef="ATTRIBUTE" value="branch"/>
+      <elementValue elementRef="ORDER" value="2"/>
+    </elementParameter>
+    <elementParameter field="TABLE" name="GROUP" show="false"/>
+    <elementParameter field="TABLE" name="LOOP" show="false">
+      <elementValue elementRef="PATH" value="/questionst/questionstree"/>
+      <elementValue elementRef="COLUMN" value="questions"/>
+      <elementValue elementRef="VALUE" value=""/>
+      <elementValue elementRef="ATTRIBUTE" value="main"/>
+      <elementValue elementRef="ORDER" value="3"/>
+    </elementParameter>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="TABLE" name="GROUPBYS">
+      <elementValue elementRef="OUTPUT_COLUMN" value="_id"/>
+      <elementValue elementRef="INPUT_COLUMN" value="_id"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="REMOVE_ROOT" value="false"/>
+    <elementParameter field="CHECK" name="COMPACT_FORMAT" value="true" show="false"/>
+    <elementParameter field="CHECK" name="QUOTE_ALL_VALUES" value="false"/>
+    <elementParameter field="CHECK" name="QUOTE_NULL_VALUES" value="true" show="false"/>
+    <elementParameter field="CHECK" name="ALLOW_EMPTY_STRINGS" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tWriteJSONField_1">
+      <column comment="" key="false" length="-1" name="_id" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="250" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="questionstree" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tExtractJSONFields" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="672" posY="288">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tExtractJSONFields_1" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="READ_BY" value="JSONPATH"/>
+    <elementParameter field="CLOSED_LIST" name="JSON_PATH_VERSION" value="2_1_0"/>
+    <elementParameter field="PREV_COLUMN_LIST" name="JSONFIELD" value="questionstree"/>
+    <elementParameter field="TEXT" name="LOOP_QUERY" value="&quot;/bills/bill/line&quot;" show="false"/>
+    <elementParameter field="TEXT" name="JSON_LOOP_QUERY" value="&quot;$.questionst.questionstree[*]&quot;"/>
+    <elementParameter field="TABLE" name="MAPPING" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="_id"/>
+      <elementValue elementRef="QUERY" value=""/>
+      <elementValue elementRef="NODECHECK" value="false"/>
+      <elementValue elementRef="ISARRAY" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="questionID"/>
+      <elementValue elementRef="QUERY" value=""/>
+      <elementValue elementRef="NODECHECK" value="false"/>
+      <elementValue elementRef="ISARRAY" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="question"/>
+      <elementValue elementRef="QUERY" value=""/>
+      <elementValue elementRef="NODECHECK" value="false"/>
+      <elementValue elementRef="ISARRAY" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="typeOfAnswer"/>
+      <elementValue elementRef="QUERY" value=""/>
+      <elementValue elementRef="NODECHECK" value="false"/>
+      <elementValue elementRef="ISARRAY" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="options"/>
+      <elementValue elementRef="QUERY" value=""/>
+      <elementValue elementRef="NODECHECK" value="false"/>
+      <elementValue elementRef="ISARRAY" value="false"/>
+    </elementParameter>
+    <elementParameter field="TABLE" name="MAPPING_4_JSONPATH">
+      <elementValue elementRef="SCHEMA_COLUMN" value="_id"/>
+      <elementValue elementRef="QUERY" value=""/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="questionID"/>
+      <elementValue elementRef="QUERY" value="&quot;questionID&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="question"/>
+      <elementValue elementRef="QUERY" value="&quot;question&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="typeOfAnswer"/>
+      <elementValue elementRef="QUERY" value="&quot;typeOfAnswer&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="options"/>
+      <elementValue elementRef="QUERY" value="&quot;options&quot;"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="100" show="false"/>
+    <elementParameter field="TEXT" name="DESTINATION" value="tExtractJSONFields_1" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;UTF-8&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="UTF-8" show="false"/>
+    <elementParameter field="CHECK" name="USE_LOOP_AS_ROOT" value="true"/>
+    <elementParameter field="CHECK" name="SPLIT_LIST" value="true" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tExtractJSONFields_1">
+      <column comment="" key="false" length="-1" name="_id" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="250" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="questionID" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="250" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="question" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="250" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="typeOfAnswer" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="250" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="options" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="250" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="REJECT" name="REJECT">
+      <column comment="" key="false" length="-1" name="_id" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="250" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="questionID" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="250" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="question" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="250" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="typeOfAnswer" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="250" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="options" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="250" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorJSONField" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tExtractJSONFields" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="864" posY="288">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tExtractJSONFields_2" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="READ_BY" value="JSONPATH"/>
+    <elementParameter field="CLOSED_LIST" name="JSON_PATH_VERSION" value="2_1_0"/>
+    <elementParameter field="PREV_COLUMN_LIST" name="JSONFIELD" value="options"/>
+    <elementParameter field="TEXT" name="LOOP_QUERY" value="&quot;/bills/bill/line&quot;" show="false"/>
+    <elementParameter field="TEXT" name="JSON_LOOP_QUERY" value="&quot;$.[*]&quot;"/>
+    <elementParameter field="TABLE" name="MAPPING" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="_id"/>
+      <elementValue elementRef="QUERY" value=""/>
+      <elementValue elementRef="NODECHECK" value="false"/>
+      <elementValue elementRef="ISARRAY" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="questionID"/>
+      <elementValue elementRef="QUERY" value=""/>
+      <elementValue elementRef="NODECHECK" value="false"/>
+      <elementValue elementRef="ISARRAY" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="question"/>
+      <elementValue elementRef="QUERY" value=""/>
+      <elementValue elementRef="NODECHECK" value="false"/>
+      <elementValue elementRef="ISARRAY" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="typeOfAnswer"/>
+      <elementValue elementRef="QUERY" value=""/>
+      <elementValue elementRef="NODECHECK" value="false"/>
+      <elementValue elementRef="ISARRAY" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="radiovalue"/>
+      <elementValue elementRef="QUERY" value=""/>
+      <elementValue elementRef="NODECHECK" value="false"/>
+      <elementValue elementRef="ISARRAY" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="lookupvalue"/>
+      <elementValue elementRef="QUERY" value=""/>
+      <elementValue elementRef="NODECHECK" value="false"/>
+      <elementValue elementRef="ISARRAY" value="false"/>
+    </elementParameter>
+    <elementParameter field="TABLE" name="MAPPING_4_JSONPATH">
+      <elementValue elementRef="SCHEMA_COLUMN" value="_id"/>
+      <elementValue elementRef="QUERY" value=""/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="questionID"/>
+      <elementValue elementRef="QUERY" value=""/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="question"/>
+      <elementValue elementRef="QUERY" value=""/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="typeOfAnswer"/>
+      <elementValue elementRef="QUERY" value=""/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="radiovalue"/>
+      <elementValue elementRef="QUERY" value="&quot;value&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="lookupvalue"/>
+      <elementValue elementRef="QUERY" value="&quot;label&quot;"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="100" show="false"/>
+    <elementParameter field="TEXT" name="DESTINATION" value="tExtractJSONFields_1" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;UTF-8&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="UTF-8" show="false"/>
+    <elementParameter field="CHECK" name="USE_LOOP_AS_ROOT" value="true"/>
+    <elementParameter field="CHECK" name="SPLIT_LIST" value="true" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tExtractJSONFields_2">
+      <column comment="" key="false" length="250" name="_id" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="250" usefulColumn="true"/>
+      <column comment="" key="false" length="250" name="questionID" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="250" usefulColumn="true"/>
+      <column comment="" key="false" length="250" name="question" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="250" usefulColumn="true"/>
+      <column comment="" key="false" length="250" name="typeOfAnswer" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="250" usefulColumn="true"/>
+      <column comment="" key="false" length="250" name="radiovalue" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="250" usefulColumn="true"/>
+      <column comment="" key="false" length="250" name="lookupvalue" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="250" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="REJECT" name="REJECT">
+      <column comment="" key="false" length="250" name="_id" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="250" usefulColumn="true"/>
+      <column comment="" key="false" length="250" name="questionID" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="250" usefulColumn="true"/>
+      <column comment="" key="false" length="250" name="question" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="250" usefulColumn="true"/>
+      <column comment="" key="false" length="250" name="typeOfAnswer" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="250" usefulColumn="true"/>
+      <column comment="" key="false" length="250" name="radiovalue" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="250" usefulColumn="true"/>
+      <column comment="" key="false" length="250" name="lookupvalue" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="250" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorJSONField" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="992" posY="288">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMap_2" show="false"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
+    <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_ghTKcJ3uEeuPtfcAvlQ8_g-tMap_2-PREVIEW.bmp"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true" show="false"/>
+    <elementParameter field="CHECK" name="LKUP_PARALLELIZE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="LEVENSHTEIN" value="0" show="false"/>
+    <elementParameter field="TEXT" name="JACCARD" value="0" show="false"/>
+    <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
+    <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="outputfile" name="outputfile">
+      <column comment="" key="false" length="250" name="_id" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="250" name="questionID" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" originalLength="250" usefulColumn="true"/>
+      <column comment="" key="false" length="250" name="question" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" originalLength="250" usefulColumn="true"/>
+      <column comment="" key="false" length="250" name="typeOfAnswer" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="250" usefulColumn="true"/>
+      <column comment="" key="false" length="250" name="radiovalue" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="250" usefulColumn="true"/>
+      <column comment="" key="false" length="250" name="lookupvalue" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="250" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="FLOW" label="questionnairetoSQLserver" name="questionnairetopostgresqlserver">
+      <column comment="" key="false" length="250" name="_id" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" originalLength="250" usefulColumn="true"/>
+      <column comment="" key="false" length="250" name="questionID" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" originalLength="250" usefulColumn="true"/>
+      <column comment="" key="false" length="250" name="question" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" originalLength="250" usefulColumn="true"/>
+      <column comment="" key="false" length="250" name="typeOfAnswer" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="250" usefulColumn="true"/>
+      <column comment="" key="false" length="250" name="radiovalue" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="250" usefulColumn="true"/>
+      <column comment="" key="false" length="250" name="lookupvalue" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="250" usefulColumn="true"/>
+    </metadata>
+    <nodeData xsi:type="TalendMapper:MapperData">
+      <uiProperties/>
+      <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
+      <outputTables sizeState="INTERMEDIATE" name="outputfile">
+        <mapperTableEntries name="_id" expression="row4._id " type="id_String"/>
+        <mapperTableEntries name="questionID" expression="row4.questionID " type="id_String"/>
+        <mapperTableEntries name="question" expression="row4.question " type="id_String"/>
+        <mapperTableEntries name="typeOfAnswer" expression="row4.typeOfAnswer " type="id_String" nullable="true"/>
+        <mapperTableEntries name="radiovalue" expression="row4.radiovalue " type="id_String" nullable="true"/>
+        <mapperTableEntries name="lookupvalue" expression="row4.lookupvalue " type="id_String" nullable="true"/>
+      </outputTables>
+      <outputTables sizeState="INTERMEDIATE" name="questionnairetopostgresqlserver">
+        <mapperTableEntries name="_id" expression="row4._id " type="id_String"/>
+        <mapperTableEntries name="questionID" expression="row4.questionID " type="id_String"/>
+        <mapperTableEntries name="question" expression="row4.question " type="id_String"/>
+        <mapperTableEntries name="typeOfAnswer" expression="row4.typeOfAnswer " type="id_String" nullable="true"/>
+        <mapperTableEntries name="radiovalue" expression="row4.radiovalue " type="id_String" nullable="true"/>
+        <mapperTableEntries name="lookupvalue" expression="row4.lookupvalue " type="id_String" nullable="true"/>
+      </outputTables>
+      <inputTables sizeState="INTERMEDIATE" name="row4" matchingMode="ALL_ROWS" lookupMode="LOAD_ONCE">
+        <mapperTableEntries name="_id" type="id_String" nullable="true"/>
+        <mapperTableEntries name="questionID" type="id_String" nullable="true"/>
+        <mapperTableEntries name="question" type="id_String" nullable="true"/>
+        <mapperTableEntries name="typeOfAnswer" type="id_String" nullable="true"/>
+        <mapperTableEntries name="radiovalue" type="id_String" nullable="true"/>
+        <mapperTableEntries name="lookupvalue" type="id_String" nullable="true"/>
+      </inputTables>
+    </nodeData>
+  </node>
+  <node componentName="tPostgresqlOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="1216" posY="288">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBOutput_1" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_Q7RUkLh4EeuuA97tgzSb6Q" show="false"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tDBConnection_1"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="V9_X" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;65ad5781-8560-4690-97c0-d43a5b42c4a9.8117147f814b4b2ea643610826cd2046.databases.appdomain.cloud&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;32301&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;TysAnalyticsDb&quot;" show="false"/>
+    <elementParameter field="TEXT" name="TYPE" value="POSTGRESQL" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;public&quot;" show="false"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;ibm_cloud_c3eae711_1f76_4405_864e_867363d5f367&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:l+XuUOtixWQVGf94taQBeCfgRD3axZXm5q8UPHzSI8SPupOWGjHsnAe3PDn08/hYKjyBHnQFkGGQYClqIcP2L82UIB4PJYa6F48WCp+ewRszUA+0qkGX8MuXLmX1JA==" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;sdmQuestionnaire&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="DROP_IF_EXISTS_AND_CREATE"/>
+    <elementParameter field="CLOSED_LIST" name="DATA_ACTION" value="INSERT"/>
+    <elementParameter field="CHECK" name="USE_SPATIAL_OPTIONS" value="false"/>
+    <elementParameter field="CHECK" name="SPATIAL_INDEX" value="false" show="false"/>
+    <elementParameter field="CHECK" name="GEOMETRY_COLUMNS" value="false" show="false"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime" show="false"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false" show="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" value="postgres_id" show="false"/>
+    <elementParameter field="CHECK" name="USE_ALTERNATE_SCHEMA" value="false"/>
+    <elementParameter field="TEXT" name="ALTERNATE_SCHEMA" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="SAVE_POINT" value="false" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="TEXT" name="COMMIT_EVERY" value="10000" show="false"/>
+    <elementParameter field="TABLE" name="ADD_COLS"/>
+    <elementParameter field="CHECK" name="USE_FIELD_OPTIONS" value="false"/>
+    <elementParameter field="TABLE" name="FIELD_OPTIONS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="_id"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="questionID"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="question"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="typeOfAnswer"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="radiovalue"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="lookupvalue"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="ENABLE_DEBUG_MODE" value="false"/>
+    <elementParameter field="CHECK" name="SUPPORT_NULL_WHERE" value="false"/>
+    <elementParameter field="CHECK" name="CONVERT_COLUMN_TABLE_TO_LOWERCASE" value="false"/>
+    <elementParameter field="CHECK" name="USE_BATCH_SIZE" value="true"/>
+    <elementParameter field="TEXT" name="BATCH_SIZE" value="10000"/>
+    <elementParameter field="TEXT" name="LABEL" value="sdm.Questionnaire"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="questionnairetoSQLserver" name="tDBOutput_1">
+      <column comment="" key="false" length="250" name="_id" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="250" usefulColumn="true"/>
+      <column comment="" key="false" length="250" name="questionID" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="250" usefulColumn="true"/>
+      <column comment="" key="false" length="250" name="question" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="250" usefulColumn="true"/>
+      <column comment="" key="false" length="250" name="typeOfAnswer" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="250" usefulColumn="true"/>
+      <column comment="" key="false" length="250" name="radiovalue" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="250" usefulColumn="true"/>
+      <column comment="" key="false" length="250" name="lookupvalue" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="250" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="REJECT" label="questionnairetoSQLserver" name="REJECT">
+      <column comment="" key="false" length="250" name="_id" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="250" usefulColumn="true"/>
+      <column comment="" key="false" length="250" name="questionID" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="250" usefulColumn="true"/>
+      <column comment="" key="false" length="250" name="question" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="250" usefulColumn="true"/>
+      <column comment="" key="false" length="250" name="typeOfAnswer" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="250" usefulColumn="true"/>
+      <column comment="" key="false" length="250" name="radiovalue" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="250" usefulColumn="true"/>
+      <column comment="" key="false" length="250" name="lookupvalue" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="250" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tPostgresqlConnection" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="128" posY="64">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBConnection_1" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="V9_X"/>
+    <elementParameter field="TEXT" name="HOST" value="context.PostgresqlIBmCloud_Server"/>
+    <elementParameter field="TEXT" name="TYPE" value="POSTGRESQL" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="context.PostgresqlIBmCloud_Port"/>
+    <elementParameter field="TEXT" name="DBNAME" value="context.PostgresqlIBmCloud_Database"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="context.PostgresqlIBmCloud_Schema"/>
+    <elementParameter field="TEXT" name="USER" value="context.PostgresqlIBmCloud_Login"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:b2fj42LrMKDOwWHeMG8IfWmvywIeS/aVx/2Ao/rudov+4lshXOuCyKDNRzsHomMxkdzR2movz4iZL6iuis3i"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="USE_SHARED_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="SHARED_CONNECTION_NAME" value="" show="false"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="AUTO_COMMIT" value="true"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node componentName="tPrejob" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="-64" posY="64">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tPrejob_1" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tMongoDBConnection_1" offsetLabelX="0" offsetLabelY="0" source="tMongoDBConnection_1" target="tMongoDBInput_3">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk1" show="false"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tSetKeystore_1" offsetLabelX="0" offsetLabelY="0" source="tSetKeystore_1" target="tMongoDBConnection_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk3" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tMongoDBInput_3" offsetLabelX="0" offsetLabelY="0" source="tMongoDBInput_3" target="tMap_1">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="_id"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row1" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="questionnaires" lineStyle="0" metaname="questionnaires" offsetLabelX="0" offsetLabelY="0" source="tMap_1" target="tWriteJSONField_1">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="_id"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="questionnaires" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row2" lineStyle="0" metaname="tWriteJSONField_1" offsetLabelX="0" offsetLabelY="0" source="tWriteJSONField_1" target="tExtractJSONFields_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row2" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row3" lineStyle="0" metaname="tExtractJSONFields_1" offsetLabelX="0" offsetLabelY="0" source="tExtractJSONFields_1" target="tExtractJSONFields_2">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row3" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row4" lineStyle="0" metaname="tExtractJSONFields_2" offsetLabelX="0" offsetLabelY="0" source="tExtractJSONFields_2" target="tMap_2">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="lookupvalue"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row4" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="questionnairetopostgresqlserver" lineStyle="0" metaname="questionnairetopostgresqlserver" offsetLabelX="0" offsetLabelY="0" source="tMap_2" target="tDBOutput_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="questionnairetopostgresqlserver" show="false"/>
+  </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tPrejob_1" offsetLabelX="0" offsetLabelY="0" source="tPrejob_1" target="tDBConnection_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk1" show="false"/>
+  </connection>
+  <subjob>
+    <elementParameter field="CHECK" name="COLLAPSED" value="true" show="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMongoDBConnection_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSetKeystore_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMongoDBInput_3" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBConnection_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true" show="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tPrejob_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="230;100;0"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="255;220;180"/>
+  </subjob>
+</talendfile:ProcessType>
