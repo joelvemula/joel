@@ -1,0 +1,30 @@
+{
+  "_id": "11ece7681c4e20a0aa38ebfa93216d0b",
+  "formSchema": {
+    "title": "TYS Supplier Attributes",
+    "description": "These are TYS custom fields where your selections and entries are applied to the supplier's profile. These fields are for your internal use and not visible to Suppliers.",
+    "type": "object",
+    "src": "https://spacetelescope.github.io/understanding-json-schema/reference/object.html#dependencies",
+    "properties": {
+      "supplierCategory": {
+        "type": "string",
+        "title": "Supplier Category",
+        "uniqueItems": true,
+        "enum": ["0", "1", "2", "3", "4","5"],
+        "enumNames": [
+          "Block",
+          "Tesco",
+          "Schneider",
+          "IBM Sterling",
+          "Diversity - NC State",
+          "Diversity - TX"
+        ]
+      }
+    },
+    "required": ["supplierCategory"]
+  },
+  "uiSchema": {
+    "supplierCategory": { "ui:widget": "selectCustomComponent" }
+  },
+  "entityID": "11ecd51f86d03fe096e4d598a2428026"
+}
