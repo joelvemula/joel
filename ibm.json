@@ -1,0 +1,319 @@
+{
+  "_id": "11ed07166785cb909b34b76b329f28a0",
+  "supplierAttributes": [
+    {
+      "attributeId": "taxCountry",
+      "qgroupMappings": [
+        {
+          "answer": [
+            "United States of America",
+            "Canada",
+            "Zambia"
+          ],
+          "operator": "in",
+          "qgroupIds": [
+            "11ed07187250a250a51f8b6af38fb757",
+            "11ecbbbad9c43b309d2c17f6d0b9ed35"
+          ]
+        }
+      ]
+    }
+  ],
+  "customFields": [
+    {
+      "attributeId": "category.supplierCategory",
+      "qgroupMappings": [
+        {
+          "answer": [
+            "SGP"
+          ],
+          "operator": "eq",
+          "qgroupIds": [
+            "11ed0718b04e3b80a51f8b6af38fb757"
+          ]
+        },
+        {
+          "answer": [
+            "FED"
+          ],
+          "operator": "eq",
+          "qgroupIds": [
+            "11ed0718b624d4b0a51f8b6af38fb757"
+          ]
+        }
+      ]
+    },
+    {
+      "attributeId": "category.supplierCommodityFamily",
+      "qgroupMappings": [
+        {
+          "answer": [
+            "HRS & TVL"
+          ],
+          "operator": "ne",
+          "qgroupIds": [
+            "11ed0718c1538840a51f8b6af38fb757"
+          ]
+        },
+        {
+          "answer": [
+            "HDW"
+          ],
+          "operator": "ne",
+          "qgroupIds": [
+            "11ed0718c1538840a51f8b6af38fb757"
+          ]
+        }
+      ]
+    },
+    {
+      "attributeId": "geo.country",
+      "qgroupMappings": [
+        {
+          "answer": [
+            "DZ",
+            "AW",
+            "AS"
+          ],
+          "operator": "nin",
+          "qgroupIds": [
+            "11ed0718e4b21900a51f8b6af38fb757"
+          ]
+        },
+        {
+          "answer": [
+            "EG"
+          ],
+          "operator": "eq",
+          "qgroupIds": [
+            "11ed0718e4b21900a51f8b6af38fb757"
+          ]
+        }
+      ]
+    },
+    {
+      "attributeId": "geo.market",
+      "qgroupMappings": [
+        {
+          "answer": [
+            "Italy",
+            "Japan",
+            "Korea",
+            "LA",
+            "MEA",
+            "Nordics",
+            "SPGI",
+            "UKI",
+            "US"
+          ],
+          "operator": "in",
+          "qgroupIds": [
+            "11ed0718fd8d2a50a51f8b6af38fb757"
+          ]
+        }
+      ]
+    },
+    {
+      "attributeId": "geo.region",
+      "qgroupMappings": [
+        {
+          "answer": [
+            "NA"
+          ],
+          "operator": "nin",
+          "qgroupIds": [
+            "11ed07190a8182b0a51f8b6af38fb757"
+          ]
+        }
+      ]
+    },
+    {
+      "attributeId": "pif.pifSupplier",
+      "qgroupMappings": [
+        {
+          "answer": [
+            true
+          ],
+          "operator": "eq",
+          "qgroupIds": [
+            "11ed07191c824670a51f8b6af38fb757"
+          ]
+        },
+        {
+          "answer": [
+            false
+          ],
+          "operator": "eq",
+          "qgroupIds": [
+            "11ed071fce70c130a51f8b6af38fb757"
+          ]
+        }
+      ]
+    },
+    {
+      "attributeId": "supplierInformation.supplierInFocusCountry",
+      "qgroupMappings": [
+        {
+          "answer": [
+            false
+          ],
+          "operator": "eq",
+          "qgroupIds": [
+            "11ed0720408688e0a51f8b6af38fb757"
+          ]
+        },
+        {
+          "answer": [
+            true
+          ],
+          "operator": "eq",
+          "qgroupIds": [
+            "11ed07195c77b800a51f8b6af38fb757"
+          ]
+        }
+      ]
+    },
+    {
+      "attributeId": "supplierInformation.spendThreshold",
+      "qgroupMappings": [
+        {
+          "answer": [
+            "0",
+            "1"
+          ],
+          "operator": "nin",
+          "qgroupIds": [
+            "11ed07196d92d6b0a51f8b6af38fb757"
+          ]
+        }
+      ]
+    },
+    {
+      "attributeId": "supplierInformation.additionalSupplierLabel",
+      "qgroupMappings": [
+        {
+          "answer": [
+            "2",
+            "4",
+            "5"
+          ],
+          "operator": "in",
+          "qgroupIds": [
+            "11ed071994784440a51f8b6af38fb757"
+          ]
+        }
+      ]
+    }
+  ],
+  "preInviteQuestionnaires": [
+    {
+      "questionnaireId": "11eced4b5bf696e08faa1f52b536b59e",
+      "questionId": "11eced4b7573dba0838f9f395d253698",
+      "qgroupMappings": [
+        {
+          "answer": [
+            "Yes"
+          ],
+          "operator": "eq",
+          "qgroupIds": [
+            "11ed0719f33dbdc0a51f8b6af38fb757"
+          ]
+        }
+      ]
+    },
+    {
+      "questionnaireId": "11eced4b5bf696e08faa1f52b536b59e",
+      "questionId": "32934525f55244afa8e846e8ebd16cc0",
+      "qgroupMappings": [
+        {
+          "answer": [
+            "Gold",
+            "Silver"
+          ],
+          "operator": "in",
+          "qgroupIds": [
+            "11ed0719f7b62680a51f8b6af38fb757"
+          ]
+        }
+      ]
+    },
+    {
+      "questionnaireId": "11eced4b5bf696e08faa1f52b536b59e",
+      "questionId": "11eaf692ace94bd4b7a5ffa7c69f89c4",
+      "qgroupMappings": [
+        {
+          "answer": [
+            "1"
+          ],
+          "operator": "eq",
+          "qgroupIds": [
+            "11ed0719fc8a1cc0a51f8b6af38fb757"
+          ]
+        }
+      ]
+    },
+    {
+      "questionnaireId": "11eced4b5bf696e08faa1f52b536b59e",
+      "questionId": "11eb348174865bc09a8a959de7a2d99a",
+      "qgroupMappings": [
+        {
+          "answer": [
+            "6666666"
+          ],
+          "operator": "eq",
+          "qgroupIds": [
+            "11ed071a16eabca0a51f8b6af38fb757"
+          ]
+        }
+      ]
+    },
+    {
+      "questionnaireId": "11eced4b5bf696e08faa1f52b536b59e",
+      "questionId": "11ec1d61f10ce4b08e4445b760fa60fd",
+      "qgroupMappings": [
+        {
+          "answer": [
+            "1",
+            "2",
+            "4"
+          ],
+          "operator": "in",
+          "qgroupIds": [
+            "11ed071a1cfe10b0a51f8b6af38fb757"
+          ]
+        }
+      ]
+    },
+    {
+      "questionnaireId": "11eced4b5bf696e08faa1f52b536b59e",
+      "questionId": "11eb0195e7a224509fee2bc73033a2fe",
+      "qgroupMappings": [
+        {
+          "answer": [
+            "Hosting and information technology (IT) infrastructure provisioning / web-page hosting services"
+          ],
+          "operator": "eq",
+          "qgroupIds": [
+            "11ed071a2d161740a51f8b6af38fb757"
+          ]
+        }
+      ]
+    },
+    {
+      "questionnaireId": "11eced4b5bf696e08faa1f52b536b59e",
+      "questionId": "11eae0bef6cb2d20a7aae36893d3e10a",
+      "qgroupMappings": [
+        {
+          "answer": [
+            "08/08/2022",
+            "08/09/2022"
+          ],
+          "operator": "in",
+          "qgroupIds": [
+            "11ed071a358b7730a51f8b6af38fb757"
+          ]
+        }
+      ]
+    }
+  ]
+}
