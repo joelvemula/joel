@@ -282,7 +282,7 @@
       "qgroupMappings": [
         {
           "answer": [
-            "Pre-Invite question 06"
+            "666666"
           ],
           "operator": "eq",
           "qgroupIds": [
@@ -297,9 +297,9 @@
       "qgroupMappings": [
         {
           "answer": [
-            "1",
-            "2",
-            "3"
+            "Consumer contact details",
+            "Marketing data (e.g. interests, profiles, spending patterns)",
+            "Payment card information (PCI)"
           ],
           "operator": "in",
           "qgroupIds": [
@@ -335,7 +335,7 @@
           ],
           "operator": "in",
           "qgroupIds": [
-            "11ed13d17dd46ec0b95c677c979bfbf2"
+            "11ed13e803ae2c0082a33bb90500e7c0"
           ]
         }
       ]
