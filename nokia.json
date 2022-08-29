@@ -1,0 +1,155 @@
+{
+  "_id": "11ed0e81c1bef240b2b3d17c3acd84ee",
+  "supplierAttributes": [
+    {
+      "attributeId": "taxCountry",
+      "qgroupMappings": [
+        {
+          "answer": [
+            "Canada"
+          ],
+          "operator": "in",
+          "qgroupIds": [
+            "11ed1ead9632a3b09afeb9218297539d"
+          ]
+        },
+        {
+          "answer": [
+            "United Kingdom"
+          ],
+          "operator": "in",
+          "qgroupIds": [
+            "11ed1eadac5c29909afeb9218297539d"
+          ]
+        }
+      ]
+    }
+  ],
+  "preInviteQuestionnaires": [
+    {
+      "questionnaireId": "11ecf82f771d41009fdbdf9efe3e836a",
+      "questionId": "11ecf82fe77cf440afba19ce2a09781d",
+      "qgroupMappings": [
+        {
+          "answer": [
+            "Yes"
+          ],
+          "operator": "eq",
+          "qgroupIds": [
+            "11ed1eac71e53b909afeb9218297539d"
+          ]
+        }
+      ]
+    },
+    {
+      "questionnaireId": "11ecf82f771d41009fdbdf9efe3e836a",
+      "questionId": "11ecf830cf171d8096df199b295ff92c",
+      "qgroupMappings": [
+        {
+          "answer": [
+            "Yes"
+          ],
+          "operator": "eq",
+          "qgroupIds": [
+            "11ed1eac71e53b909afeb9218297539d"
+          ]
+        }
+      ]
+    },
+    {
+      "questionnaireId": "11ecf82f771d41009fdbdf9efe3e836a",
+      "questionId": "11ecf830d69c782099ff3fcd573848f8",
+      "qgroupMappings": [
+        {
+          "answer": [
+            "Yes"
+          ],
+          "operator": "in",
+          "qgroupIds": [
+            "11ed1eac71e53b909afeb9218297539d",
+            "11ed1ead87257d709afeb9218297539d"
+          ]
+        }
+      ]
+    },
+    {
+      "questionnaireId": "11ecf82f771d41009fdbdf9efe3e836a",
+      "questionId": "11ecf830de4c653091a9bb48b68187d6",
+      "qgroupMappings": [
+        {
+          "answer": [
+            "Yes"
+          ],
+          "operator": "in",
+          "qgroupIds": [
+            "11ed1eac71e53b909afeb9218297539d",
+            "11ed1eac7b8252a09afeb9218297539d"
+          ]
+        }
+      ]
+    },
+    {
+      "questionnaireId": "11ecf82f771d41009fdbdf9efe3e836a",
+      "questionId": "11ecf830e6ed9010870695fc0e19d546",
+      "qgroupMappings": [
+        {
+          "answer": [
+            "Yes"
+          ],
+          "operator": "in",
+          "qgroupIds": [
+            "11ed1eac71e53b909afeb9218297539d",
+            "11ed1eac7b8252a09afeb9218297539d"
+          ]
+        }
+      ]
+    },
+    {
+      "questionnaireId": "11ecf82f771d41009fdbdf9efe3e836a",
+      "questionId": "11ecf830ed5063b0a702e7f8c05a9a9e",
+      "qgroupMappings": [
+        {
+          "answer": [
+            "Yes"
+          ],
+          "operator": "in",
+          "qgroupIds": [
+            "11ed1eac71e53b909afeb9218297539d",
+            "11ed1eac7b8252a09afeb9218297539d"
+          ]
+        }
+      ]
+    },
+    {
+      "questionnaireId": "11ecf82f771d41009fdbdf9efe3e836a",
+      "questionId": "11ecf830f32660a0b457cb2c7e3e3658",
+      "qgroupMappings": [
+        {
+          "answer": [
+            "Yes"
+          ],
+          "operator": "in",
+          "qgroupIds": [
+            "11ed1eac71e53b909afeb9218297539d"
+          ]
+        }
+      ]
+    },
+    {
+      "questionnaireId": "11ecf82f771d41009fdbdf9efe3e836a",
+      "questionId": "11ed22d1e41f01e0bb1b957ce68f48dc",
+      "qgroupMappings": [
+        {
+          "answer": [
+            "Yes"
+          ],
+          "operator": "in",
+          "qgroupIds": [
+            "11ed1eac71e53b909afeb9218297539d",
+            "11ed1eac9ec3e5809afeb9218297539d"
+          ]
+        }
+      ]
+    }
+  ]
+}
