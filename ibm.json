@@ -1,0 +1,344 @@
+{
+  "_id": "11ed0e86c2153650993a7d939c292941",
+  "supplierAttributes": [
+    {
+      "attributeId": "taxCountry",
+      "qgroupMappings": [
+        {
+          "answer": [
+            "United States of America",
+            "Canada",
+            "Zambia"
+          ],
+          "operator": "in",
+          "qgroupIds": [
+            "11ed13e516bd32d082a33bb90500e7c0"
+          ]
+        }
+      ]
+    }
+  ],
+  "customFields": [
+    {
+      "attributeId": "category.supplierCategory",
+      "qgroupMappings": [
+        {
+          "answer": [
+            "SGP",
+            "ESS"
+          ],
+          "operator": "in",
+          "qgroupIds": [
+            "11ed13e54a48639082a33bb90500e7c0"
+          ]
+        },
+        {
+          "answer": [
+            "SPP",
+            "GLP",
+            "FED"
+          ],
+          "operator": "in",
+          "qgroupIds": [
+            "11ed13e60511eca082a33bb90500e7c0"
+          ]
+        }
+      ]
+    },
+    {
+      "attributeId": "category.supplierCommodityFamily",
+      "qgroupMappings": [
+        {
+          "answer": [
+            "HRS & TVL",
+            "MCP",
+            "HDW"
+          ],
+          "operator": "nin",
+          "qgroupIds": [
+            "11ed13e55aa625b082a33bb90500e7c0"
+          ]
+        }
+      ]
+    },
+    {
+      "attributeId": "geo.country",
+      "qgroupMappings": [
+        {
+          "answer": [
+            "DZ",
+            "AW",
+            "AS"
+          ],
+          "operator": "nin",
+          "qgroupIds": [
+            "11ed13e5afa2480082a33bb90500e7c0"
+          ]
+        }
+      ]
+    },
+    {
+      "attributeId": "geo.market",
+      "qgroupMappings": [
+        {
+          "answer": [
+            "Italy",
+            "Japan",
+            "Korea",
+            "LA",
+            "MEA",
+            "Nordics",
+            "SPGI",
+            "UKI",
+            "US"
+          ],
+          "operator": "in",
+          "qgroupIds": [
+            "11ed13e59c8b324082a33bb90500e7c0"
+          ]
+        }
+      ]
+    },
+    {
+      "attributeId": "geo.region",
+      "qgroupMappings": [
+        {
+          "answer": [
+            "NA"
+          ],
+          "operator": "ne",
+          "qgroupIds": [
+            "11ed13e590a3dd1082a33bb90500e7c0"
+          ]
+        }
+      ]
+    },
+    {
+      "attributeId": "pif.pifSupplier",
+      "qgroupMappings": [
+        {
+          "answer": [
+            true
+          ],
+          "operator": "eq",
+          "qgroupIds": [
+            "11ed13e5d6457c7082a33bb90500e7c0"
+          ]
+        },
+        {
+          "answer": [
+            false
+          ],
+          "operator": "eq",
+          "qgroupIds": [
+            "11ed13e5db05758082a33bb90500e7c0"
+          ]
+        }
+      ]
+    },
+    {
+      "attributeId": "supplierInformation.supplierInFocusCountry",
+      "qgroupMappings": [
+        {
+          "answer": [
+            true
+          ],
+          "operator": "eq",
+          "qgroupIds": [
+            "11ed13e64f17344082a33bb90500e7c0"
+          ]
+        },
+        {
+          "answer": [
+            false
+          ],
+          "operator": "eq",
+          "qgroupIds": [
+            "11ed13e6540457d082a33bb90500e7c0"
+          ]
+        }
+      ]
+    },
+    {
+      "attributeId": "supplierInformation.spendThreshold",
+      "qgroupMappings": [
+        {
+          "answer": [
+            "0"
+          ],
+          "operator": "ne",
+          "qgroupIds": [
+            "11ed13e62b8ba01082a33bb90500e7c0"
+          ]
+        }
+      ]
+    },
+    {
+      "attributeId": "supplierInformation.additionalSupplierLabel",
+      "qgroupMappings": [
+        {
+          "answer": [
+            "2",
+            "4",
+            "5"
+          ],
+          "operator": "in",
+          "qgroupIds": [
+            "11ed13e611a671c082a33bb90500e7c0"
+          ]
+        }
+      ]
+    }
+  ],
+  "preInviteQuestionnaires": [
+    {
+      "questionnaireId": "11eced4b5bf696e08faa1f52b536b59e",
+      "questionId": "11eced4b7573dba0838f9f395d253698",
+      "qgroupMappings": [
+        {
+          "answer": [
+            "Yes"
+          ],
+          "operator": "eq",
+          "qgroupIds": [
+            "11ed13e6ac124e0082a33bb90500e7c0"
+          ]
+        },
+        {
+          "answer": [
+            "No"
+          ],
+          "operator": "eq",
+          "qgroupIds": [
+            "11ed13e6af006d4082a33bb90500e7c0"
+          ]
+        }
+      ]
+    },
+    {
+      "questionnaireId": "11eced4b5bf696e08faa1f52b536b59e",
+      "questionId": "32934525f55244afa8e846e8ebd16cc0",
+      "qgroupMappings": [
+        {
+          "answer": [
+            "Gold",
+            "Silver"
+          ],
+          "operator": "in",
+          "qgroupIds": [
+            "11ed13e6c6d1d6c082a33bb90500e7c0"
+          ]
+        }
+      ]
+    },
+    {
+      "questionnaireId": "11eced4b5bf696e08faa1f52b536b59e",
+      "questionId": "11eaf692ace94bd4b7a5ffa7c69f89c4",
+      "qgroupMappings": [
+        {
+          "answer": [
+            "1"
+          ],
+          "operator": "eq",
+          "qgroupIds": [
+            "11ed13e6d5e27f7082a33bb90500e7c0"
+          ]
+        }
+      ]
+    },
+    {
+      "questionnaireId": "11eced4b5bf696e08faa1f52b536b59e",
+      "questionId": "11ea94eeef255531aacb6500dbde89b1",
+      "qgroupMappings": [
+        {
+          "answer": [
+            "Pre-Invite question 04"
+          ],
+          "operator": "eq",
+          "qgroupIds": [
+            "11ed13e6d94e814082a33bb90500e7c0"
+          ]
+        }
+      ]
+    },
+    {
+      "questionnaireId": "11eced4b5bf696e08faa1f52b536b59e",
+      "questionId": "11ebe4a1609ecea0acce75dd9f577ba8",
+      "qgroupMappings": [
+        {
+          "answer": [
+            "Pre-Invite question 05"
+          ],
+          "operator": "eq",
+          "qgroupIds": [
+            "11ed13e6dcdc8a0082a33bb90500e7c0"
+          ]
+        }
+      ]
+    },
+    {
+      "questionnaireId": "11eced4b5bf696e08faa1f52b536b59e",
+      "questionId": "11eb348174865bc09a8a959de7a2d99a",
+      "qgroupMappings": [
+        {
+          "answer": [
+            "666666"
+          ],
+          "operator": "eq",
+          "qgroupIds": [
+            "11ed13e6e09d89a082a33bb90500e7c0"
+          ]
+        }
+      ]
+    },
+    {
+      "questionnaireId": "11eced4b5bf696e08faa1f52b536b59e",
+      "questionId": "11ec1d61f10ce4b08e4445b760fa60fd",
+      "qgroupMappings": [
+        {
+          "answer": [
+            "Consumer contact details",
+            "Marketing data (e.g. interests, profiles, spending patterns)",
+            "Payment card information (PCI)"
+          ],
+          "operator": "in",
+          "qgroupIds": [
+            "11ed13e7d2b7d6f082a33bb90500e7c0"
+          ]
+        }
+      ]
+    },
+    {
+      "questionnaireId": "11eced4b5bf696e08faa1f52b536b59e",
+      "questionId": "11eb0195e7a224509fee2bc73033a2fe",
+      "qgroupMappings": [
+        {
+          "answer": [
+            "IT infrastructure, network management services and training",
+            "Other IT services"
+          ],
+          "operator": "in",
+          "qgroupIds": [
+            "11ed13e7fc3fb4c082a33bb90500e7c0"
+          ]
+        }
+      ]
+    },
+    {
+      "questionnaireId": "11eced4b5bf696e08faa1f52b536b59e",
+      "questionId": "11eae0bef6cb2d20a7aae36893d3e10a",
+      "qgroupMappings": [
+        {
+          "answer": [
+            "08/08/2025",
+            "08/09/2026"
+          ],
+          "operator": "in",
+          "qgroupIds": [
+            "11ed13e803ae2c0082a33bb90500e7c0"
+          ]
+        }
+      ]
+    }
+  ]
+}
