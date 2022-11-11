@@ -1,0 +1,6 @@
+TYS Name,TYS ID,TYS Business Name,TYS Legal Name,Tax Country,HQ City,Full Time Employees,Part Time Employees,TYS DUNS,UNSPSC,NAICS,BusinessType,"taxRegistrationNumber
+",Corporate Identification Number,GSTIN,PAN Number,EUVAT Registration Number,Tax File Number,Aus Business Number,"ausCompanyNumber
+","corporationNumber
+",Tax Identification Number,Company Registration  Number,Business Identification Number,VAT Registration Number,Corporation Code,Is Publically Traded,Stock Exchange,ticker
+AETNA LIFE INSURANCE COMPANY DBA AETNA,US034649210,AETNA,Aetna Life Insurance Company,United States of America,Hartford,49828,0,,"8,41,31,60,28,41,31,60,00,00,00,00,00,00,00,000",524 - Insurance Carriers and Related Activities T,CORPORATION,06-6033492,,,,,,,,,,,,,,Yes,NYSE,CVS
+Apttus Corporation,US004173961,APTTUS CORPORATION,APTTUS CORPORATION,United States of America,San Mateo,1200,0,800312451,84111502,541511 - Custom Computer Programming Services,CORPORATION,20-5542615,,,,,,,,,,,,,,No,,
