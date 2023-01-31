@@ -1,0 +1,1158 @@
+{
+  "_id": "11e9e6d95ca43d70bccf316c91a8b106",
+  "questionnaireName": "QUESTIONNAIRE_LIABILITY_INSURANCE",
+  "questionnaireNotes": "QUESTIONNAIRE_LIABILITY_INSURANCE_NOTES",
+  "category": "Standard",
+  "country": "Global",
+  "version": "V2.2",
+  "questions": [
+    {
+      "questionID": "11e9e6d96428adb0adb8dd23c723e7fa",
+      "question": "QUESTION_LIABILITY_INSURANCE_MAXIMUM_LIABILITY",
+      "typeOfAnswer": "radio",
+      "options": [
+        { "key": "YES", "value": "Yes" },
+        { "key": "NO", "value": "No" }
+      ],
+      "additionalOptions": {
+        "question": "QUESTION_LIABILITY_INSURANCE_MAXIMUM_LIABILITY_OPTIONAL",
+        "typeOfAnswer": "text",
+        "triggerOn": "NO",
+        "length": 1000,
+        "mandatory": true
+      },
+      "mandatory": true
+    },
+    {
+      "questionID": "11eb4ec03dc59b608220cbfd16764713",
+      "question": "QUESTION_LIABILITY_INSURANCE_CURRENCY",
+      "typeOfAnswer": "select",
+      "defaultSelection": "FORM_INPUT_SELECT_DEFAULT",
+      "options": [
+        { "key": "CURRENCY_OPTION_DOLLAR", "value": "US Dollar (USD)" },
+        { "key": "CURRENCY_OPTION_CANADIAN_DOLLAR", "value": "Canadian Dollar (CAD)" },
+        { "key": "CURRENCY_OPTION_EURO", "value": "Euro (EUR)" },
+        { "key": "CURRENCY_OPTION_POUND", "value": "Pound Sterling (GBP)" },
+        { "key": "CURRENCY_OPTION_INDIA_RUPEE", "value": "Indian Rupee (INR)" },
+        { "key": "CURRENCY_OPTION_BRAZILIAN_REAL", "value": "Brazilian Real (BRL)" },
+        { "key": "CURRENCY_OPTION_SOUTH_AFRICAN_RAND", "value": "South African RAND (ZAR)" },
+        { "key": "CURRENCY_OPTION_MEXICAN_PESO", "value": "Mexican Peso (MXN)" },
+        { "key": "CURRENCY_OPTION_SWISS_FRANC", "value": "Swiss Franc (CHF)" },
+        { "key": "CURRENCY_OPTION_HUNGARIAN_FORINT", "value": "Hungarian Forint (HUF)" },
+        { "key": "CURRENCY_OPTION_SAUDI_ARABIAN_RIYAL", "value": "Saudi Arabian Riyal (SAR)" },
+        { "key": "CURRENCY_OPTION_SWEDISH_KRONA", "value": "Swedish Krona (SEK)" },
+        { "key": "CURRENCY_OPTION_NORWEGIAN_KRONE", "value": "Norwegian Krone (NOK)" },
+        { "key": "CURRENCY_OPTION_COLOMBIAN_PESO", "value": "Colombian Peso (COP)" },
+        { "key": "CURRENCY_OPTION_CZECH_KORUNA", "value": "Czech Koruna (CZK)" },
+        { "key": "CURRENCY_OPTION_DANISH_KRONE", "value": "Danish Krone (DKK)" },
+        { "key": "CURRENCY_OPTION_SINGAPORE_DOLLAR", "value": "Singapore Dollar (SGD)" },
+        { "key": "CURRENCY_OPTION_ARGENTINE_PESO", "value": "Argentine Peso (ARS)" },
+        { "key": "CURRENCY_OPTION_CHILEAN_PESO", "value": "Chilean Peso (CLP)" },
+        { "key": "CURRENCY_OPTION_PERUVIAN_SOL", "value": "Peruvian Sol (PEN)" },
+        { "key": "CURRENCY_OPTION_NEW_ZEALAND_DOLLAR", "value": "New Zealand Dollar (NZD)" },
+        { "key": "CURRENCY_OPTION_INDONESIAN_RUPIAH", "value": "Indonesian Rupiah (IDR)" },
+        { "key": "CURRENCY_OPTION_MALAYSIAN_RINGGIT", "value": "Malaysian Ringgit (MYR)" },
+        { "key": "CURRENCY_OPTION_PHILIPPINE_PESO", "value": "Philippine Peso (PHP)" },
+        { "key": "CURRENCY_OPTION_KOREAN_REPUBLIC_WON", "value": "Korean Republic Won (KRW)" },
+        { "key": "CURRENCY_OPTION_THAI_BAHT", "value": "Thai Baht (THB)" },
+        { "key": "CURRENCY_OPTION_BULGARIAN_LEV", "value": "Bulgarian Lev (BGN)" },
+        { "key": "CURRENCY_OPTION_CROATIAN_KUNA", "value": "Croatian kuna (HRK)" },
+        { "key": "CURRENCY_OPTION_POLISH_ZLOTY", "value": "Polish złoty (PLN)" },
+        { "key": "CURRENCY_OPTION_ROMANIAN_LEU", "value": "Romanian leu (RON)" },
+        { "key": "CURRENCY_OPTION_MOROCCAN_DIRHAM", "value": "Moroccan dirham (MAD)" },
+        { "key": "CURRENCY_OPTION_SERBIAN_DINAR", "value": "Serbian dinar (RSD)" },
+        { "key": "CURRENCY_OPTION_RUSSIAN_ROUBLE", "value": "Russian Rouble (RUB)" },
+        { "key": "CURRENCY_OPTION_UKRANIAN_HRYVNIA", "value": "Ukrainian hryvnia (UAH)" },
+        { "key": "CURRENCY_OPTION_TURKISH_LIRA", "value": "Turkish lira (TRY)" },
+        {
+          "key": "CURRENCY_OPTION_WEST_AFRICAN_CFA_FRANC",
+          "value": "West African CFA franc (XOF)"
+        },
+        { "key": "CURRENCY_OPTION_TUNISIA_DINAR", "value": "Tunisia Dinar (TND)" },
+        { "key": "CURRENCY_OPTION_BOLIVIAN_BOLIVIANO", "value": "Bolivian Boliviano (BOB)" },
+        { "key": "CURRENCY_OPTION_COSTA_RICAN_COLON", "value": "Costa Rican Colon (CRC)" },
+        { "key": "CURRENCY_OPTION_BANGLADESHI_TAKA", "value": "Bangladeshi Taka (BDT)" },
+        { "key": "CURRENCY_OPTION_ALBANIAN_LEK", "value": "Albanian Lek (ALK)" },
+        { "key": "CURRENCY_OPTION_URUGUAY_PESO", "value": "Uruguayan Peso (UYU)" },
+        { "key": "CURRENCY_OPTION_SURINMESE_DOLLAR", "value": "Surinamese Dollar (SRD)" },
+        { "key": "CURRENCY_OPTION_VIETNAMESE_DONG", "value": "Vietnamese dong (VND)" },
+        { "key": "CURRENCY_OPTION_SRILANKAN_RUPEE", "value": "Sri Lankan rupee (LKR)" },
+        { "key": "CURRENCY_OPTION_BURMESE_KYAT", "value": "Burmese Kyat (MMK)" },
+        { "key": "CURRENCY_OPTION_PAKISTANI_RUPEE", "value": "Pakistani rupee (PKR)" },
+        { "key": "CURRENCY_OPTION_MAURITIAN_RUPEE", "value": "Mauritian rupee (MUR)" },
+        { "key": "CURRENCY_OPTION_HONDURAN_LEMPIRA", "value": "Honduran lempira (HNL)" },
+        { "key": "CURRENCY_OPTION_GUATEMALAN_QUETZAL", "value": "Guatemalan quetzal (GTQ)" },
+        { "key": "CURRENCY_OPTION_DOMINICAN_PESO", "value": "Dominican peso (DOP)" },
+        { "key": "CURRENCY_OPTION_PARAGUAYAN_GUARANI", "value": "Paraguayan guaraní (PYG)" },
+        {
+          "key": "CURRENCY_OPTION_ALGERIAN_DINAR",
+          "value": "Algerian Dinar (DZD)"
+        },
+        {
+          "key": "CURRENCY_OPTION_AUSTRALIAN_DOLLAR",
+          "value": "Australian Dollar (AUD)"
+        },
+        {
+          "key": "CURRENCY_OPTION_AZERBAIJANI_MANAT",
+          "value": "Azerbaijani manat (AZN)"
+        },
+        {
+          "key": "CURRENCY_OPTION_BOSNIA_HERZEGOVINA",
+          "value": "Bosnia and Herzegovina convertible mark (BAM)"
+        },
+        {
+          "key": "CURRENCY_OPTION_CAMBODIAN_RIEL",
+          "value": "Cambodian Riel (KHR)"
+        },
+        {
+          "key": "CURRENCY_OPTION_CENTRAL_AFRICAN_CFA_FRANC",
+          "value": "Central African CFA franc (XAF)"
+        },
+        {
+          "key": "CURRENCY_OPTION_CHINESE_YUAN",
+          "value": "Chinese Yuan (CNY)"
+        },
+        {
+          "key": "CURRENCY_OPTION_CONGOLESE_FRANC",
+          "value": "Congolese Franc (CDF)"
+        },
+        {
+          "key": "CURRENCY_OPTION_EGYPTIAN_POUND",
+          "value": "Egyptian pound (EGP)"
+        },
+        {
+          "key": "CURRENCY_OPTION_GEORGIAN_LARI",
+          "value": "Georgian lari (GEL)"
+        },
+        {
+          "key": "CURRENCY_OPTION_GHANAIAN_CEDI",
+          "value": "Ghanaian cedi (GHS)"
+        },
+        {
+          "key": "CURRENCY_OPTION_HONG_KONG_DOLLAR",
+          "value": "Hong Kong Dollar (HKD)"
+        },
+        {
+          "key": "CURRENCY_OPTION_ISRAELI_NEW_SHEKEL",
+          "value": "Israeli new shekel (ILS)"
+        },
+        {
+          "key": "CURRENCY_OPTION_JAPANESE_YEN",
+          "value": "Japanese Yen (JPY)"
+        },
+        {
+          "key": "CURRENCY_OPTION_JORDANIAN_DINAR",
+          "value": "Jordanian dinar (JOD)"
+        },
+        {
+          "key": "CURRENCY_OPTION_KAZAKHSTANI_TENGE",
+          "value": "Kazakhstani tenge (KZT)"
+        },
+        {
+          "key": "CURRENCY_OPTION_KENYAN_SHILLING",
+          "value": "Kenyan shilling (KES)"
+        },
+        {
+          "key": "CURRENCY_OPTION_KUWAITI_DINAR",
+          "value": "Kuwaiti Dinar (KWD)"
+        },
+        {
+          "key": "CURRENCY_OPTION_LEBANESE_POUND",
+          "value": "Lebanese pound (LBP)"
+        },
+        {
+          "key": "CURRENCY_OPTION_LESOTHO_LOTI",
+          "value": "Lesotho loti (LSL)"
+        },
+        {
+          "key": "CURRENCY_OPTION_MOLDOVA_LEU",
+          "value": "Moldovan Leu (MDL)"
+        },
+        {
+          "key": "CURRENCY_OPTION_MOZAMBICAN_METICAL",
+          "value": "Mozambican Metical (MZN)"
+        },
+        {
+          "key": "CURRENCY_OPTION_NEW_TAIWAN_DOLLAR",
+          "value": "New Taiwan Dollar (NT)"
+        },
+        {
+          "key": "CURRENCY_OPTION_NIGERIA_NAIRA",
+          "value": "Nigerian naira (NGN)"
+        },
+        {
+          "key": "CURRENCY_OPTION_PANAMANIAN_BALBOA",
+          "value": "Panamanian balboa (USD)"
+        },
+        {
+          "key": "CURRENCY_OPTION_QATARI_RIYAL",
+          "value": "Qatari Riyal (QAR)"
+        },
+        {
+          "key": "CURRENCY_OPTION_TANZANIAN_SHILLING",
+          "value": "Tanzanian shilling (TZS)"
+        },
+        {
+          "key": "CURRENCY_OPTION_UZBEKISTANI_SOM",
+          "value": "Uzbekistani som (UZS)"
+        }
+      ],
+      "isVisible": {
+        "eq": {
+          "questionID": "11e9e6d96428adb0adb8dd23c723e7fa",
+          "answer": "YES"
+        }
+      },
+      "mandatory": true
+    },
+    {
+      "questionID": "11eb4ec0466d7d0089a1d7fc05d9b72b",
+      "question": "QUESTION_LIABILITY_INSURANCE_COVERAGE",
+      "subtext": "QUESTION_LIABILITY_INSURANCE_COVERAGE_SUBTEXT",
+      "typeOfAnswer": "lookup",
+      "options": [
+        {
+          "id": 0,
+          "label": "OPTION_GENERAL_LIABILITY"
+        },
+        {
+          "id": 1,
+          "label": "OPTION_AUTOMOBILE_LIABILITY"
+        },
+        {
+          "id": 2,
+          "label": "OPTION_ADVERTISING_INJURY_LIABILITY"
+        },
+        {
+          "id": 3,
+          "label": "OPTION_PROFESSIONAL_LIABILITY"
+        },
+        {
+          "id": 4,
+          "label": "OPTION_UMBRELLA_LIABILITY"
+        },
+        {
+          "id": 5,
+          "label": "OPTION_EMPLOYERS_LIABILITY"
+        },
+        {
+          "id": 6,
+          "label": "OPTION_PROPERTY_LIABILITY"
+        },
+        {
+          "id": 7,
+          "label": "OPTION_WORKERS_COMPENSATION_LIABILITY"
+        },
+        {
+          "id": 8,
+          "label": "OPTION_CYBER_LIABILITY"
+        },
+        {
+          "id": 9,
+          "label": "OPTION_EMPLOYEMENT_PRACTICES_LIABILITY"
+        },
+        {
+          "id": 10,
+          "label": "OPTION_OTHER"
+        }
+      ],
+
+      "isVisible": {
+        "eq": { "questionID": "11e9e6d96428adb0adb8dd23c723e7fa", "answer": "YES" }
+      },
+      "mandatory": true
+    },
+    {
+      "questionID": "11e9e6d96a9c4a30aac3657ff1b1037a",
+      "question": "QUESTION_LIABILITY_INSURANCE_GENERAL_LIABILITY_COVERAGE_AMOUNT",
+      "defaultSelection": "FORM_INPUT_SELECT_DEFAULT",
+      "typeOfAnswer": "select",
+      "options": [
+        {
+          "key": "OPTION_LIABILITY_INSURANCE_0_99K",
+          "value": "0 and < 0.1M"
+        },
+        {
+          "key": "OPTION_LIABILITY_INSURANCE_100K",
+          "value": "≥ 0.1M and < 0.2M"
+        },
+        {
+          "key": "OPTION_LIABILITY_INSURANCE_200K",
+          "value": "≥ 0.2M and < 0.3M"
+        },
+        {
+          "key": "OPTION_LIABILITY_INSURANCE_300K",
+          "value": "≥ 0.3M and < 0.4M"
+        },
+        {
+          "key": "OPTION_LIABILITY_INSURANCE_400K",
+          "value": "≥ 0.4M and < 0.5M"
+        },
+        {
+          "key": "OPTION_LIABILITY_INSURANCE_500K_TO_900K",
+          "value": "≥ 0.5M and < 1M"
+        },
+        {
+          "key": "OPTION_LIABILITY_INSURANCE_1M",
+          "value": "≥ 1M and < 2M"
+        },
+        {
+          "key": "OPTION_LIABILITY_INSURANCE_2M",
+          "value": "≥ 2M and < 3M"
+        },
+        {
+          "key": "OPTION_LIABILITY_INSURANCE_3M",
+          "value": "≥ 3M and < 4M"
+        },
+        {
+          "key": "OPTION_LIABILITY_INSURANCE_4M",
+          "value": "≥ 4M and < 5M"
+        },
+        {
+          "key": "OPTION_LIABILITY_INSURANCE_5M",
+          "value": "≥ 5M and < 10M"
+        },
+        {
+          "key": "OPTION_LIABILITY_INSURANCE_10M",
+          "value": "10M +"
+        }
+      ],
+      "isVisible": {
+        "containsKey": {
+          "questionID": "11eb4ec0466d7d0089a1d7fc05d9b72b",
+          "answer": "OPTION_GENERAL_LIABILITY"
+        }
+      },
+      "mandatory": true
+    },
+    {
+      "questionID": "11eb4ecfe0b77b908f60a574510a51a8",
+      "question": "QUESTION_LIABILITY_INSURANCE_LIABILITY_PROVIDER",
+      "typeOfAnswer": "text",
+      "length": 100,
+      "isVisible": {
+        "containsKey": {
+          "questionID": "11eb4ec0466d7d0089a1d7fc05d9b72b",
+          "answer": "OPTION_GENERAL_LIABILITY"
+        }
+      },
+      "mandatory": false
+    },
+    {
+      "questionID": "11e9e6d970425d80acb8bfa779dc6ec4",
+      "question": "QUESTION_LIABILITY_INSURANCE_AUTOMOBILE_COVERAGE_AMOUNT",
+      "defaultSelection": "FORM_INPUT_SELECT_DEFAULT",
+      "typeOfAnswer": "select",
+      "options": [
+        {
+          "key": "OPTION_LIABILITY_INSURANCE_0_99K",
+          "value": "0 and < 0.1M"
+        },
+        {
+          "key": "OPTION_LIABILITY_INSURANCE_100K",
+          "value": "≥ 0.1M and < 0.2M"
+        },
+        {
+          "key": "OPTION_LIABILITY_INSURANCE_200K",
+          "value": "≥ 0.2M and < 0.3M"
+        },
+        {
+          "key": "OPTION_LIABILITY_INSURANCE_300K",
+          "value": "≥ 0.3M and < 0.4M"
+        },
+        {
+          "key": "OPTION_LIABILITY_INSURANCE_400K",
+          "value": "≥ 0.4M and < 0.5M"
+        },
+        {
+          "key": "OPTION_LIABILITY_INSURANCE_500K_TO_900K",
+          "value": "≥ 0.5M and < 1M"
+        },
+        {
+          "key": "OPTION_LIABILITY_INSURANCE_1M",
+          "value": "≥ 1M and < 2M"
+        },
+        {
+          "key": "OPTION_LIABILITY_INSURANCE_2M",
+          "value": "≥ 2M and < 3M"
+        },
+        {
+          "key": "OPTION_LIABILITY_INSURANCE_3M",
+          "value": "≥ 3M and < 4M"
+        },
+        {
+          "key": "OPTION_LIABILITY_INSURANCE_4M",
+          "value": "≥ 4M and < 5M"
+        },
+        {
+          "key": "OPTION_LIABILITY_INSURANCE_5M",
+          "value": "≥ 5M and < 10M"
+        },
+        {
+          "key": "OPTION_LIABILITY_INSURANCE_10M",
+          "value": "10M +"
+        }
+      ],
+      "isVisible": {
+        "containsKey": {
+          "questionID": "11eb4ec0466d7d0089a1d7fc05d9b72b",
+          "answer": "OPTION_AUTOMOBILE_LIABILITY"
+        }
+      },
+      "mandatory": true
+    },
+    {
+      "questionID": "11eb4ed062180ec0b60709d896f64007",
+      "question": "QUESTION_LIABILITY_INSURANCE_AUTOMOBILE_PROVIDER",
+      "typeOfAnswer": "text",
+      "length": 100,
+      "isVisible": {
+        "containsKey": {
+          "questionID": "11eb4ec0466d7d0089a1d7fc05d9b72b",
+          "answer": "OPTION_AUTOMOBILE_LIABILITY"
+        }
+      },
+      "mandatory": false
+    },
+    {
+      "questionID": "11e9e6d9783f59209831cd2ac1b5e09b",
+      "question": "QUESTION_LIABILITY_INSURANCE_ADVERTISING_COVERAGE_AMOUNT",
+      "defaultSelection": "FORM_INPUT_SELECT_DEFAULT",
+      "typeOfAnswer": "select",
+      "options": [
+        {
+          "key": "OPTION_LIABILITY_INSURANCE_0_99K",
+          "value": "0 and < 0.1M"
+        },
+        {
+          "key": "OPTION_LIABILITY_INSURANCE_100K",
+          "value": "≥ 0.1M and < 0.2M"
+        },
+        {
+          "key": "OPTION_LIABILITY_INSURANCE_200K",
+          "value": "≥ 0.2M and < 0.3M"
+        },
+        {
+          "key": "OPTION_LIABILITY_INSURANCE_300K",
+          "value": "≥ 0.3M and < 0.4M"
+        },
+        {
+          "key": "OPTION_LIABILITY_INSURANCE_400K",
+          "value": "≥ 0.4M and < 0.5M"
+        },
+        {
+          "key": "OPTION_LIABILITY_INSURANCE_500K_TO_900K",
+          "value": "≥ 0.5M and < 1M"
+        },
+        {
+          "key": "OPTION_LIABILITY_INSURANCE_1M",
+          "value": "≥ 1M and < 2M"
+        },
+        {
+          "key": "OPTION_LIABILITY_INSURANCE_2M",
+          "value": "≥ 2M and < 3M"
+        },
+        {
+          "key": "OPTION_LIABILITY_INSURANCE_3M",
+          "value": "≥ 3M and < 4M"
+        },
+        {
+          "key": "OPTION_LIABILITY_INSURANCE_4M",
+          "value": "≥ 4M and < 5M"
+        },
+        {
+          "key": "OPTION_LIABILITY_INSURANCE_5M",
+          "value": "≥ 5M and < 10M"
+        },
+        {
+          "key": "OPTION_LIABILITY_INSURANCE_10M",
+          "value": "10M +"
+        }
+      ],
+      "isVisible": {
+        "containsKey": {
+          "questionID": "11eb4ec0466d7d0089a1d7fc05d9b72b",
+          "answer": "OPTION_ADVERTISING_INJURY_LIABILITY"
+        }
+      },
+      "mandatory": true
+    },
+    {
+      "questionID": "11eb4ed134a08ac080793d0deb9cfb87",
+      "question": "QUESTION_LIABILITY_INSURANCE_ADVERTISING_PROVIDER",
+      "typeOfAnswer": "text",
+      "length": 100,
+      "isVisible": {
+        "containsKey": {
+          "questionID": "11eb4ec0466d7d0089a1d7fc05d9b72b",
+          "answer": "OPTION_ADVERTISING_INJURY_LIABILITY"
+        }
+      },
+      "mandatory": false
+    },
+    {
+      "questionID": "11e9e6d97e8cd000980373c9587b2ee2",
+      "question": "QUESTION_LIABILITY_INSURANCE_PROFESSIONAL_COVERAGE_AMOUNT",
+      "defaultSelection": "FORM_INPUT_SELECT_DEFAULT",
+      "typeOfAnswer": "select",
+      "options": [
+        {
+          "key": "OPTION_LIABILITY_INSURANCE_0_99K",
+          "value": "0 and < 0.1M"
+        },
+        {
+          "key": "OPTION_LIABILITY_INSURANCE_100K",
+          "value": "≥ 0.1M and < 0.2M"
+        },
+        {
+          "key": "OPTION_LIABILITY_INSURANCE_200K",
+          "value": "≥ 0.2M and < 0.3M"
+        },
+        {
+          "key": "OPTION_LIABILITY_INSURANCE_300K",
+          "value": "≥ 0.3M and < 0.4M"
+        },
+        {
+          "key": "OPTION_LIABILITY_INSURANCE_400K",
+          "value": "≥ 0.4M and < 0.5M"
+        },
+        {
+          "key": "OPTION_LIABILITY_INSURANCE_500K_TO_900K",
+          "value": "≥ 0.5M and < 1M"
+        },
+        {
+          "key": "OPTION_LIABILITY_INSURANCE_1M",
+          "value": "≥ 1M and < 2M"
+        },
+        {
+          "key": "OPTION_LIABILITY_INSURANCE_2M",
+          "value": "≥ 2M and < 3M"
+        },
+        {
+          "key": "OPTION_LIABILITY_INSURANCE_3M",
+          "value": "≥ 3M and < 4M"
+        },
+        {
+          "key": "OPTION_LIABILITY_INSURANCE_4M",
+          "value": "≥ 4M and < 5M"
+        },
+        {
+          "key": "OPTION_LIABILITY_INSURANCE_5M",
+          "value": "≥ 5M and < 10M"
+        },
+        {
+          "key": "OPTION_LIABILITY_INSURANCE_10M",
+          "value": "10M +"
+        }
+      ],
+
+      "isVisible": {
+        "containsKey": {
+          "questionID": "11eb4ec0466d7d0089a1d7fc05d9b72b",
+          "answer": "OPTION_PROFESSIONAL_LIABILITY"
+        }
+      },
+      "mandatory": true
+    },
+    {
+      "questionID": "11eb4ed1b61430c0a3f87331e9b31cae",
+      "question": "QUESTION_LIABILITY_INSURANCE_PROFESSIONAL_PROVIDER",
+      "typeOfAnswer": "text",
+      "length": 100,
+
+      "isVisible": {
+        "containsKey": {
+          "questionID": "11eb4ec0466d7d0089a1d7fc05d9b72b",
+          "answer": "OPTION_PROFESSIONAL_LIABILITY"
+        }
+      },
+      "mandatory": false
+    },
+    {
+      "questionID": "11eb4ed1c76c3160a7b291b45d0f55c1",
+      "question": "QUESTION_LIABILITY_INSURANCE_UMBRELLA_COVERAGE_AMOUNT",
+      "defaultSelection": "FORM_INPUT_SELECT_DEFAULT",
+      "typeOfAnswer": "select",
+      "options": [
+        {
+          "key": "OPTION_LIABILITY_INSURANCE_0_99K",
+          "value": "0 and < 0.1M"
+        },
+        {
+          "key": "OPTION_LIABILITY_INSURANCE_100K",
+          "value": "≥ 0.1M and < 0.2M"
+        },
+        {
+          "key": "OPTION_LIABILITY_INSURANCE_200K",
+          "value": "≥ 0.2M and < 0.3M"
+        },
+        {
+          "key": "OPTION_LIABILITY_INSURANCE_300K",
+          "value": "≥ 0.3M and < 0.4M"
+        },
+        {
+          "key": "OPTION_LIABILITY_INSURANCE_400K",
+          "value": "≥ 0.4M and < 0.5M"
+        },
+        {
+          "key": "OPTION_LIABILITY_INSURANCE_500K_TO_900K",
+          "value": "≥ 0.5M and < 1M"
+        },
+        {
+          "key": "OPTION_LIABILITY_INSURANCE_1M",
+          "value": "≥ 1M and < 2M"
+        },
+        {
+          "key": "OPTION_LIABILITY_INSURANCE_2M",
+          "value": "≥ 2M and < 3M"
+        },
+        {
+          "key": "OPTION_LIABILITY_INSURANCE_3M",
+          "value": "≥ 3M and < 4M"
+        },
+        {
+          "key": "OPTION_LIABILITY_INSURANCE_4M",
+          "value": "≥ 4M and < 5M"
+        },
+        {
+          "key": "OPTION_LIABILITY_INSURANCE_5M",
+          "value": "≥ 5M and < 10M"
+        },
+        {
+          "key": "OPTION_LIABILITY_INSURANCE_10M",
+          "value": "10M +"
+        }
+      ],
+
+      "isVisible": {
+        "containsKey": {
+          "questionID": "11eb4ec0466d7d0089a1d7fc05d9b72b",
+          "answer": "OPTION_UMBRELLA_LIABILITY"
+        }
+      },
+      "mandatory": true
+    },
+    {
+      "questionID": "11eb4ed1f89e08d081e10f8442368432",
+      "question": "QUESTION_LIABILITY_INSURANCE_UMBRELLA_PROVIDER",
+      "typeOfAnswer": "text",
+      "length": 100,
+
+      "isVisible": {
+        "containsKey": {
+          "questionID": "11eb4ec0466d7d0089a1d7fc05d9b72b",
+          "answer": "OPTION_UMBRELLA_LIABILITY"
+        }
+      },
+      "mandatory": false
+    },
+
+    {
+      "questionID": "11eba387c38f8f509023917d6b3eaeae",
+      "question": "QUESTION_LIABILITY_INSURANCE_EMPLOYERS_COVERAGE_AMOUNT",
+      "defaultSelection": "FORM_INPUT_SELECT_DEFAULT",
+      "typeOfAnswer": "select",
+      "options": [
+        {
+          "key": "OPTION_LIABILITY_INSURANCE_0_99K",
+          "value": "0 and < 0.1M"
+        },
+        {
+          "key": "OPTION_LIABILITY_INSURANCE_100K",
+          "value": "≥ 0.1M and < 0.2M"
+        },
+        {
+          "key": "OPTION_LIABILITY_INSURANCE_200K",
+          "value": "≥ 0.2M and < 0.3M"
+        },
+        {
+          "key": "OPTION_LIABILITY_INSURANCE_300K",
+          "value": "≥ 0.3M and < 0.4M"
+        },
+        {
+          "key": "OPTION_LIABILITY_INSURANCE_400K",
+          "value": "≥ 0.4M and < 0.5M"
+        },
+        {
+          "key": "OPTION_LIABILITY_INSURANCE_500K_TO_900K",
+          "value": "≥ 0.5M and < 1M"
+        },
+        {
+          "key": "OPTION_LIABILITY_INSURANCE_1M",
+          "value": "≥ 1M and < 2M"
+        },
+        {
+          "key": "OPTION_LIABILITY_INSURANCE_2M",
+          "value": "≥ 2M and < 3M"
+        },
+        {
+          "key": "OPTION_LIABILITY_INSURANCE_3M",
+          "value": "≥ 3M and < 4M"
+        },
+        {
+          "key": "OPTION_LIABILITY_INSURANCE_4M",
+          "value": "≥ 4M and < 5M"
+        },
+        {
+          "key": "OPTION_LIABILITY_INSURANCE_5M",
+          "value": "≥ 5M and < 10M"
+        },
+        {
+          "key": "OPTION_LIABILITY_INSURANCE_10M",
+          "value": "10M +"
+        }
+      ],
+
+      "isVisible": {
+        "containsKey": {
+          "questionID": "11eb4ec0466d7d0089a1d7fc05d9b72b",
+          "answer": "OPTION_EMPLOYERS_LIABILITY"
+        }
+      },
+      "mandatory": true
+    },
+    {
+      "questionID": "11eba387950139908f206b9dd7f202dc",
+      "question": "QUESTION_LIABILITY_INSURANCE_EMPLOYERS_PROVIDER",
+      "typeOfAnswer": "text",
+      "length": 100,
+      "isVisible": {
+        "containsKey": {
+          "questionID": "11eb4ec0466d7d0089a1d7fc05d9b72b",
+          "answer": "OPTION_EMPLOYERS_LIABILITY"
+        }
+      },
+      "mandatory": false
+    },
+
+    {
+      "questionID": "11eb4f3eb6c6f170b484d751e64c439e",
+      "question": "QUESTION_LIABILITY_INSURANCE_PROPERTY_COVERAGE_AMOUNT",
+      "defaultSelection": "FORM_INPUT_SELECT_DEFAULT",
+      "typeOfAnswer": "select",
+      "options": [
+        {
+          "key": "OPTION_LIABILITY_INSURANCE_0_99K",
+          "value": "0 and < 0.1M"
+        },
+        {
+          "key": "OPTION_LIABILITY_INSURANCE_100K",
+          "value": "≥ 0.1M and < 0.2M"
+        },
+        {
+          "key": "OPTION_LIABILITY_INSURANCE_200K",
+          "value": "≥ 0.2M and < 0.3M"
+        },
+        {
+          "key": "OPTION_LIABILITY_INSURANCE_300K",
+          "value": "≥ 0.3M and < 0.4M"
+        },
+        {
+          "key": "OPTION_LIABILITY_INSURANCE_400K",
+          "value": "≥ 0.4M and < 0.5M"
+        },
+        {
+          "key": "OPTION_LIABILITY_INSURANCE_500K_TO_900K",
+          "value": "≥ 0.5M and < 1M"
+        },
+        {
+          "key": "OPTION_LIABILITY_INSURANCE_1M",
+          "value": "≥ 1M and < 2M"
+        },
+        {
+          "key": "OPTION_LIABILITY_INSURANCE_2M",
+          "value": "≥ 2M and < 3M"
+        },
+        {
+          "key": "OPTION_LIABILITY_INSURANCE_3M",
+          "value": "≥ 3M and < 4M"
+        },
+        {
+          "key": "OPTION_LIABILITY_INSURANCE_4M",
+          "value": "≥ 4M and < 5M"
+        },
+        {
+          "key": "OPTION_LIABILITY_INSURANCE_5M",
+          "value": "≥ 5M and < 10M"
+        },
+        {
+          "key": "OPTION_LIABILITY_INSURANCE_10M",
+          "value": "10M +"
+        }
+      ],
+
+      "isVisible": {
+        "containsKey": {
+          "questionID": "11eb4ec0466d7d0089a1d7fc05d9b72b",
+          "answer": "OPTION_PROPERTY_LIABILITY"
+        }
+      },
+      "mandatory": true
+    },
+    {
+      "questionID": "11eb4f3ed3f77a309e157df5716c38e2",
+      "question": "QUESTION_LIABILITY_INSURANCE_PROPERTY_PROVIDER",
+      "typeOfAnswer": "text",
+      "length": 100,
+      "isVisible": {
+        "containsKey": {
+          "questionID": "11eb4ec0466d7d0089a1d7fc05d9b72b",
+          "answer": "OPTION_PROPERTY_LIABILITY"
+        }
+      },
+      "mandatory": false
+    },
+
+    {
+      "questionID": "11eb4f3f19201900ac4c3d52ba6919ab",
+      "question": "QUESTION_LIABILITY_INSURANCE_WORKERS_COVERAGE_AMOUNT",
+      "defaultSelection": "FORM_INPUT_SELECT_DEFAULT",
+      "typeOfAnswer": "select",
+      "options": [
+        {
+          "key": "OPTION_LIABILITY_INSURANCE_0_99K",
+          "value": "0 and < 0.1M"
+        },
+        {
+          "key": "OPTION_LIABILITY_INSURANCE_100K",
+          "value": "≥ 0.1M and < 0.2M"
+        },
+        {
+          "key": "OPTION_LIABILITY_INSURANCE_200K",
+          "value": "≥ 0.2M and < 0.3M"
+        },
+        {
+          "key": "OPTION_LIABILITY_INSURANCE_300K",
+          "value": "≥ 0.3M and < 0.4M"
+        },
+        {
+          "key": "OPTION_LIABILITY_INSURANCE_400K",
+          "value": "≥ 0.4M and < 0.5M"
+        },
+        {
+          "key": "OPTION_LIABILITY_INSURANCE_500K_TO_900K",
+          "value": "≥ 0.5M and < 1M"
+        },
+        {
+          "key": "OPTION_LIABILITY_INSURANCE_1M",
+          "value": "≥ 1M and < 2M"
+        },
+        {
+          "key": "OPTION_LIABILITY_INSURANCE_2M",
+          "value": "≥ 2M and < 3M"
+        },
+        {
+          "key": "OPTION_LIABILITY_INSURANCE_3M",
+          "value": "≥ 3M and < 4M"
+        },
+        {
+          "key": "OPTION_LIABILITY_INSURANCE_4M",
+          "value": "≥ 4M and < 5M"
+        },
+        {
+          "key": "OPTION_LIABILITY_INSURANCE_5M",
+          "value": "≥ 5M and < 10M"
+        },
+        {
+          "key": "OPTION_LIABILITY_INSURANCE_10M",
+          "value": "10M +"
+        }
+      ],
+
+      "isVisible": {
+        "containsKey": {
+          "questionID": "11eb4ec0466d7d0089a1d7fc05d9b72b",
+          "answer": "OPTION_WORKERS_COMPENSATION_LIABILITY"
+        }
+      },
+      "mandatory": true
+    },
+    {
+      "questionID": "11eb4f3f48145c80a9c62da2bd5e5b7b",
+      "question": "QUESTION_LIABILITY_INSURANCE_WORKERS_PROVIDER",
+      "typeOfAnswer": "text",
+      "length": 100,
+      "isVisible": {
+        "containsKey": {
+          "questionID": "11eb4ec0466d7d0089a1d7fc05d9b72b",
+          "answer": "OPTION_WORKERS_COMPENSATION_LIABILITY"
+        }
+      },
+      "mandatory": false
+    },
+
+    {
+      "questionID": "11eb4f3f5c9e8a40bddd1f63d4c7bae0",
+      "question": "QUESTION_LIABILITY_INSURANCE_CYBER_COVERAGE_AMOUNT",
+      "defaultSelection": "FORM_INPUT_SELECT_DEFAULT",
+      "typeOfAnswer": "select",
+      "options": [
+        {
+          "key": "OPTION_LIABILITY_INSURANCE_0_99K",
+          "value": "0 and < 0.1M"
+        },
+        {
+          "key": "OPTION_LIABILITY_INSURANCE_100K",
+          "value": "≥ 0.1M and < 0.2M"
+        },
+        {
+          "key": "OPTION_LIABILITY_INSURANCE_200K",
+          "value": "≥ 0.2M and < 0.3M"
+        },
+        {
+          "key": "OPTION_LIABILITY_INSURANCE_300K",
+          "value": "≥ 0.3M and < 0.4M"
+        },
+        {
+          "key": "OPTION_LIABILITY_INSURANCE_400K",
+          "value": "≥ 0.4M and < 0.5M"
+        },
+        {
+          "key": "OPTION_LIABILITY_INSURANCE_500K_TO_900K",
+          "value": "≥ 0.5M and < 1M"
+        },
+        {
+          "key": "OPTION_LIABILITY_INSURANCE_1M",
+          "value": "≥ 1M and < 2M"
+        },
+        {
+          "key": "OPTION_LIABILITY_INSURANCE_2M",
+          "value": "≥ 2M and < 3M"
+        },
+        {
+          "key": "OPTION_LIABILITY_INSURANCE_3M",
+          "value": "≥ 3M and < 4M"
+        },
+        {
+          "key": "OPTION_LIABILITY_INSURANCE_4M",
+          "value": "≥ 4M and < 5M"
+        },
+        {
+          "key": "OPTION_LIABILITY_INSURANCE_5M",
+          "value": "≥ 5M and < 10M"
+        },
+        {
+          "key": "OPTION_LIABILITY_INSURANCE_10M",
+          "value": "10M +"
+        }
+      ],
+
+      "isVisible": {
+        "containsKey": {
+          "questionID": "11eb4ec0466d7d0089a1d7fc05d9b72b",
+          "answer": "OPTION_CYBER_LIABILITY"
+        }
+      },
+      "mandatory": true
+    },
+    {
+      "questionID": "11eb4f3f7ebf43d08799cb0e41fa6adf",
+      "question": "QUESTION_LIABILITY_INSURANCE_CYBER_PROVIDER",
+      "typeOfAnswer": "text",
+      "length": 100,
+      "isVisible": {
+        "containsKey": {
+          "questionID": "11eb4ec0466d7d0089a1d7fc05d9b72b",
+          "answer": "OPTION_CYBER_LIABILITY"
+        }
+      },
+      "mandatory": false
+    },
+
+    {
+      "questionID": "11eb4f3fc4ab80c0aeaa87976d4b3a61",
+      "question": "QUESTION_LIABILITY_INSURANCE_EMPLOYMENT_COVERAGE_AMOUNT",
+      "defaultSelection": "FORM_INPUT_SELECT_DEFAULT",
+      "typeOfAnswer": "select",
+      "options": [
+        {
+          "key": "OPTION_LIABILITY_INSURANCE_0_99K",
+          "value": "0 and < 0.1M"
+        },
+        {
+          "key": "OPTION_LIABILITY_INSURANCE_100K",
+          "value": "≥ 0.1M and < 0.2M"
+        },
+        {
+          "key": "OPTION_LIABILITY_INSURANCE_200K",
+          "value": "≥ 0.2M and < 0.3M"
+        },
+        {
+          "key": "OPTION_LIABILITY_INSURANCE_300K",
+          "value": "≥ 0.3M and < 0.4M"
+        },
+        {
+          "key": "OPTION_LIABILITY_INSURANCE_400K",
+          "value": "≥ 0.4M and < 0.5M"
+        },
+        {
+          "key": "OPTION_LIABILITY_INSURANCE_500K_TO_900K",
+          "value": "≥ 0.5M and < 1M"
+        },
+        {
+          "key": "OPTION_LIABILITY_INSURANCE_1M",
+          "value": "≥ 1M and < 2M"
+        },
+        {
+          "key": "OPTION_LIABILITY_INSURANCE_2M",
+          "value": "≥ 2M and < 3M"
+        },
+        {
+          "key": "OPTION_LIABILITY_INSURANCE_3M",
+          "value": "≥ 3M and < 4M"
+        },
+        {
+          "key": "OPTION_LIABILITY_INSURANCE_4M",
+          "value": "≥ 4M and < 5M"
+        },
+        {
+          "key": "OPTION_LIABILITY_INSURANCE_5M",
+          "value": "≥ 5M and < 10M"
+        },
+        {
+          "key": "OPTION_LIABILITY_INSURANCE_10M",
+          "value": "10M +"
+        }
+      ],
+
+      "isVisible": {
+        "containsKey": {
+          "questionID": "11eb4ec0466d7d0089a1d7fc05d9b72b",
+          "answer": "OPTION_EMPLOYEMENT_PRACTICES_LIABILITY"
+        }
+      },
+      "mandatory": true
+    },
+    {
+      "questionID": "11eb4f3fe84df8508a9d77bf1fdc0bd1",
+      "question": "QUESTION_LIABILITY_INSURANCE_EMPLOYMENT_PROVIDER",
+      "typeOfAnswer": "text",
+      "length": 100,
+      "isVisible": {
+        "containsKey": {
+          "questionID": "11eb4ec0466d7d0089a1d7fc05d9b72b",
+          "answer": "OPTION_EMPLOYEMENT_PRACTICES_LIABILITY"
+        }
+      },
+      "mandatory": false
+    },
+
+    {
+      "questionID": "11eb4f40c3d5ebd08fae6364cab9e848",
+      "question": "QUESTION_LIABILITY_INSURANCE_OTHER_COVERAGE_AMOUNT",
+      "defaultSelection": "FORM_INPUT_SELECT_DEFAULT",
+      "typeOfAnswer": "select",
+      "options": [
+        {
+          "key": "OPTION_LIABILITY_INSURANCE_0_99K",
+          "value": "0 and < 0.1M"
+        },
+        {
+          "key": "OPTION_LIABILITY_INSURANCE_100K",
+          "value": "≥ 0.1M and < 0.2M"
+        },
+        {
+          "key": "OPTION_LIABILITY_INSURANCE_200K",
+          "value": "≥ 0.2M and < 0.3M"
+        },
+        {
+          "key": "OPTION_LIABILITY_INSURANCE_300K",
+          "value": "≥ 0.3M and < 0.4M"
+        },
+        {
+          "key": "OPTION_LIABILITY_INSURANCE_400K",
+          "value": "≥ 0.4M and < 0.5M"
+        },
+        {
+          "key": "OPTION_LIABILITY_INSURANCE_500K_TO_900K",
+          "value": "≥ 0.5M and < 1M"
+        },
+        {
+          "key": "OPTION_LIABILITY_INSURANCE_1M",
+          "value": "≥ 1M and < 2M"
+        },
+        {
+          "key": "OPTION_LIABILITY_INSURANCE_2M",
+          "value": "≥ 2M and < 3M"
+        },
+        {
+          "key": "OPTION_LIABILITY_INSURANCE_3M",
+          "value": "≥ 3M and < 4M"
+        },
+        {
+          "key": "OPTION_LIABILITY_INSURANCE_4M",
+          "value": "≥ 4M and < 5M"
+        },
+        {
+          "key": "OPTION_LIABILITY_INSURANCE_5M",
+          "value": "≥ 5M and < 10M"
+        },
+        {
+          "key": "OPTION_LIABILITY_INSURANCE_10M",
+          "value": "10M +"
+        }
+      ],
+      "isVisible": {
+        "containsKey": {
+          "questionID": "11eb4ec0466d7d0089a1d7fc05d9b72b",
+          "answer": "OPTION_OTHER"
+        }
+      },
+      "mandatory": true
+    },
+    {
+      "questionID": "11eb4f4131bb50408c01fde2e6cca344",
+      "question": "QUESTION_LIABILITY_INSURANCE_OTHER_PROVIDER",
+      "typeOfAnswer": "text",
+      "length": 200,
+      "isVisible": {
+        "containsKey": {
+          "questionID": "11eb4ec0466d7d0089a1d7fc05d9b72b",
+          "answer": "OPTION_OTHER"
+        }
+      },
+      "mandatory": false
+    },
+
+    {
+      "questionID": "11e9e6d984fbd8a085b7714425038b94",
+      "question": "QUESTION_LIABILITY_INSURANCE_ATTACH_CERTIFICATE_INSURANCE",
+      "typeOfAnswer": "attachment",
+      "isVisible": {
+        "eq": {
+          "questionID": "11e9e6d96428adb0adb8dd23c723e7fa",
+          "answer": "YES"
+        }
+      },
+      "mandatory": false
+    },
+    {
+      "questionID": "11ea8b001c695f30b4d1576f9692f837",
+      "question": "QUESTION_LIABILITY_INSURANCE_DOCUMENTS_ORGANIZATION",
+      "typeOfAnswer": "radio",
+      "options": [
+        {
+          "key": "YES",
+          "value": "Yes"
+        },
+        {
+          "key": "NO",
+          "value": "No"
+        }
+      ],
+      "attachment": {
+        "question": "ATTACH_COI",
+        "triggerOn": "YES",
+        "mandatory": true,
+        "expiryDate": true
+      },
+      "isVisible": {
+        "eq": {
+          "questionID": "11e9e6d96428adb0adb8dd23c723e7fa",
+          "answer": "YES"
+        }
+      },
+      "mandatory": true
+    }
+  ]
+}
