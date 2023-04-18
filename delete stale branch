@@ -1,0 +1,27 @@
+#!/bin/bash
+
+##
+# Script to delete remote git branches
+##
+count=0
+# Fetch the remote resources
+git pull
+
+# Loop through all remote merged branches
+#for branch in $(git branch -r | grep -v HEAD | grep -v develop1.1 | grep -v develop | grep -v master | sed /\*/d); do
+for branch in $(git branch -r --merged | grep -v HEAD | grep -v develop1.1 | grep -v develop | grep -v master | grep -v "hotfix" | grep -v "release" |  sed /\*/d); do
+        if [ -z "$(git log -1 --since='3 months ago' -s ${branch})" ]; then
+                #echo -e `git show --format="%ci | %cr | %cn | %an |" ${branch} | head -n 1` \\t$branch
+                echo -e `git show --format="%ci|%cr|%an|" ${branch} | head -n 1` \\t$branch >> stale_branches.txt
+                remote_branch=$(echo ${branch} | sed 's#origin/##' )
+                echo "Remote branch : $remote_branch"
+                #if [ ${count} -lt 10 ]; then
+                        # To delete the branches uncomment the bellow git delete command
+                        #git push origin --delete ${remote_branch}
+                #       echo "${count} is less than 10"
+                #       count=$(expr $count + 1)
+                #else
+                #       exit 0;
+                #fi
+        fi
+done
