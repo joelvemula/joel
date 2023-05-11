@@ -1,0 +1,83 @@
+# Please edit the object below. Lines beginning with a '#' will be ignored,
+# and an empty file will abort the edit. If an error occurs while saving this file will be
+# reopened with the relevant failures.
+#
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  annotations:
+  labels:
+    app: integration-slyncer-insights
+  name: integration-slyncer-insights
+  namespace: default
+spec:
+  progressDeadlineSeconds: 600
+  replicas: 1
+  selector:
+    matchLabels:
+      app: integration-slyncer-insights
+  strategy:
+    rollingUpdate:
+      maxSurge: 25%
+      maxUnavailable: 25%
+    type: RollingUpdate
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: integration-slyncer-insights
+    spec:
+      containers:
+      - args:
+        - -c
+        - cp /tmp/config/local.json config/development.json && cd tys-lib && npm i --omit=dev && npm run build && cd ../insights && npm
+          install @nestjs/cli@8.1.4 -g && npm install --omit=dev && npm run start
+        command:
+        - /bin/sh
+        env:
+        - name: NODE_ENV
+          value: development
+        envFrom:
+          - configMapRef:
+              name: integration-config
+        image: us.icr.io/tys-qa/slyncer:23.5.434
+        imagePullPolicy: Always
+        name: integration-slyncer-insights
+        ports:
+        - containerPort: 3000
+          protocol: TCP
+        resources: {}
+        terminationMessagePath: /dev/termination-log
+        terminationMessagePolicy: File
+        volumeMounts:
+        - mountPath: /tmp/
+          name: configuration
+          readOnly: true
+      dnsPolicy: ClusterFirst
+      restartPolicy: Always
+      volumes:
+      - name: configuration
+        secret:
+          defaultMode: 420
+          items:
+          - key: integration.json
+            path: config/local.json
+          secretName: integration
+---
+apiVersion: v1
+kind: Service
+metadata:
+  annotations:
+  labels:
+    app: integration-slyncer-insights
+  name: integration-slyncer-insights
+  namespace: demo
+spec:
+  ports:
+  - name: port0
+    port: 3000
+    protocol: TCP
+    targetPort: 3000
+  selector:
+    app: integration-slyncer-insights
+  type: ClusterIP
