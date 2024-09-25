@@ -1,0 +1,49 @@
+{
+  "orgName": "Demo Buyer",
+  "userDetails": {
+    "userName": "demobuyer@maildrop.cc",
+    "userRole": "0d40bea040514387b23bea8bb8d09fd5",
+    "firstName": "Demo",
+    "lastName": "Buyer",
+    "customFieldID": "ab4d0a83f2664c71a4a0de0a49ea2077",
+    "taxCountry": "United States of America"
+  },
+  "ownershipFeature": {
+    "enabled": true
+  },
+  "financeFeature": {
+    "enabled": true
+  },
+  "config": {
+    "isGovernanceBoardMember": false,
+    "allowSupplierFirstConnectionWaiver": false,
+    "isSupplierBankingInfoRequired": false,
+    "systems": [
+      "ARIBA",
+      "Globality",
+      "Fairmarkit",
+      "Non-Competitive",
+      "Offline"
+    ],
+    "onHoldReasons": [
+      "Missing RBA contract",
+      "S&EMS incompliance",
+      "Pending Internal Approval",
+      "Contractual negotiation ongoing",
+      "Reputational investigation",
+      "Other"
+    ],
+    "blockReasons": [
+      "Purchasing block",
+      "Invoicing block",
+      "Reputational risk",
+      "Region/Country block",
+      "Supplier in DPL/USL",
+      "Deactivated Supplier",
+      "Other"
+    ],
+    "reportingBuyerName": "Demo buyer",
+    "isRefuseToReceiveNAGEmail": false,
+    "isSynopsisEnabled": true
+  }
+}

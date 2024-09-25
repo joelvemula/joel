@@ -1,0 +1,316 @@
+{
+    "username": "demobuyer@maildrop.cc",
+    "companyName": "Demo Buyer",
+    "abilities": [
+        {
+            "_id": "ae767bf22df044b29bf22dca8222b54a",
+            "userRole": "Vendor Analyst",
+            "roleAbilities": [
+                {
+                    "subject": "ApprovalRequest",
+                    "actions": [
+                        "create",
+                        "read",
+                        "update"
+                    ]
+                },
+                {
+                    "subject": "InternalDueDiligence",
+                    "actions": [
+                        "read",
+                        "update"
+                    ]
+                },
+                {
+                    "subject": "Report",
+                    "actions": [
+                        "read",
+                        "edit"
+                    ]
+                },
+                {
+                    "subject": "Questionnaire",
+                    "actions": [
+                        "read",
+                        "create",
+                        "update",
+                        "delete"
+                    ]
+                },
+                {
+                    "actions": [
+                        "read",
+                        "create",
+                        "update"
+                    ],
+                    "subject": "Configure_Approvals"
+                },
+                {
+                    "subject": "BankAccount",
+                    "actions": [
+                        "read:masked",
+                        "read"
+                    ]
+                },
+                {
+                    "subject": "Supplier_Profile",
+                    "actions": [
+                        "read"
+                    ]
+                },
+                {
+                    "subject": "Bulk",
+                    "actions": [
+                        "read",
+                        "upload:bulkInvite",
+                        "download:bulkInviteTemplate",
+                        "read:supplierCustomFields",
+                        "read:supplierBuyerSystems",
+                        "upload:precheck",
+                        "download:precheckTemplate",
+                        "upload:supplierCustomFields",
+                        "upload:supplierBuyerSystems"
+                    ]
+                },
+                {
+                    "subject": "Relationship",
+                    "actions": [
+                        "read",
+                        "read:pending",
+                        "read:accepted",
+                        "read:submitted",
+                        "read:onboarded",
+                        "read:rejected",
+                        "read:actionRequired",
+                        "create:invite",
+                        "create:note",
+                        "update:onboard",
+                        "update:actionRequired",
+                        "read:unlinkedSubmitted",
+                        "manage:onhold",
+                        "manage:block/unblock",
+                        "manage:supplierWatchlist",
+                        "manage:revalidation",
+                        "read:supplierRelationshipContact",
+                        "update:supplierRelationshipContact",
+                        "read:supplierQuestionnaire",
+                        "update:supplierQuestionnaire",
+                        "read:buyerSystemdetails",
+                        "update:buyerSystemdetails",
+                        "update:customFields"
+                    ]
+                },
+                {
+                    "subject": "InternalDPL",
+                    "actions": [
+                        "read",
+                        "download:template",
+                        "upload"
+                    ]
+                }
+            ]
+        },
+        {
+            "_id": "06d6d804ef1445df904f8d94f2b613b6",
+            "userRole": "Category Manager",
+            "roleAbilities": [
+                {
+                    "subject": "ApprovalRequest",
+                    "actions": [
+                        "read",
+                        "create",
+                        "update"
+                    ]
+                },
+                {
+                    "subject": "InternalDueDiligence",
+                    "actions": [
+                        "read",
+                        "update"
+                    ]
+                },
+                {
+                    "subject": "Report",
+                    "actions": [
+                        "read",
+                        "edit"
+                    ]
+                },
+                {
+                    "subject": "Role",
+                    "actions": [
+                        "create",
+                        "update",
+                        "delete"
+                    ]
+                },
+                {
+                    "subject": "Questionnaire",
+                    "actions": [
+                        "read",
+                        "create",
+                        "update",
+                        "delete"
+                    ]
+                },
+                {
+                    "subject": "Supplier_Profile",
+                    "actions": [
+                        "read"
+                    ]
+                },
+                {
+                    "subject": "User",
+                    "actions": [
+                        "create",
+                        "update",
+                        "delete"
+                    ]
+                },
+                {
+                    "subject": "Bulk",
+                    "actions": [
+                        "read",
+                        "download:bulkInviteTemplate",
+                        "upload:bulkInvite",
+                        "download:precheckTemplate",
+                        "upload:precheck",
+                        "read:supplierCustomFields",
+                        "read:supplierBuyerSystems",
+                        "upload:supplierCustomFields",
+                        "upload:supplierBuyerSystems"
+                    ]
+                },
+                {
+                    "subject": "Relationship",
+                    "actions": [
+                        "read",
+                        "read:pending",
+                        "read:accepted",
+                        "read:submitted",
+                        "read:onboarded",
+                        "read:rejected",
+                        "read:actionRequired",
+                        "create:invite",
+                        "create:note",
+                        "update:onboard",
+                        "update:actionRequired",
+                        "read:unlinkedSubmitted",
+                        "manage:onhold",
+                        "manage:block/unblock",
+                        "manage:supplierWatchlist",
+                        "manage:revalidation",
+                        "read:supplierRelationshipContact",
+                        "update:supplierRelationshipContact",
+                        "read:supplierQuestionnaire",
+                        "update:supplierQuestionnaire",
+                        "read:buyerSystemdetails",
+                        "update:buyerSystemdetails",
+                        "update:customFields"
+                    ]
+                }
+            ]
+        },
+        {
+            "_id": "1b7544ca06e04ea79f93aa40472bc731",
+            "userRole": "Approver",
+            "roleAbilities": [
+                {
+                    "subject": "ApprovalRequest",
+                    "actions": [
+                        "create",
+                        "read",
+                        "update"
+                    ]
+                },
+                {
+                    "subject": "InternalDueDiligence",
+                    "actions": [
+                        "read",
+                        "update"
+                    ]
+                },
+                {
+                    "subject": "Role",
+                    "actions": [
+                        "create",
+                        "update",
+                        "delete"
+                    ]
+                },
+                {
+                    "subject": "Questionnaire",
+                    "actions": [
+                        "read",
+                        "create",
+                        "update",
+                        "delete"
+                    ]
+                },
+                {
+                    "subject": "BankAccount",
+                    "actions": [
+                        "read:masked",
+                        "read"
+                    ]
+                },
+                {
+                    "subject": "Supplier_Profile",
+                    "actions": [
+                        "read"
+                    ]
+                },
+                {
+                    "subject": "User",
+                    "actions": [
+                        "create",
+                        "update",
+                        "delete"
+                    ]
+                },
+                {
+                    "subject": "Bulk",
+                    "actions": [
+                        "read",
+                        "download:bulkInviteTemplate",
+                        "upload:bulkInvite",
+                        "download:precheckTemplate",
+                        "upload:precheck",
+                        "read:supplierCustomFields",
+                        "read:supplierBuyerSystems",
+                        "upload:supplierCustomFields",
+                        "upload:supplierBuyerSystems"
+                    ]
+                },
+                {
+                    "subject": "Relationship",
+                    "actions": [
+                        "read",
+                        "read:pending",
+                        "read:accepted",
+                        "read:submitted",
+                        "read:onboarded",
+                        "read:rejected",
+                        "read:actionRequired",
+                        "create:invite",
+                        "create:note",
+                        "update:onboard",
+                        "update:actionRequired",
+                        "read:unlinkedSubmitted",
+                        "manage:onhold",
+                        "manage:block/unblock",
+                        "manage:supplierWatchlist",
+                        "manage:revalidation",
+                        "read:supplierRelationshipContact",
+                        "update:supplierRelationshipContact",
+                        "read:supplierQuestionnaire",
+                        "update:supplierQuestionnaire",
+                        "read:buyerSystemdetails",
+                        "update:buyerSystemdetails",
+                        "update:customFields"
+                    ]
+                }
+            ]
+        }
+    ]
+}
